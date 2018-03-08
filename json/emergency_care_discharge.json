@@ -1,0 +1,1046 @@
+[
+  {
+    "title": "GP practice ",
+    "data": {
+      "description": "Details of the GP practice where the patient is registered.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "GP practice identifier",
+        "data": {
+          "description": "The identifier of the registered GP Practice.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>This should be the Organisation Data Services (ODS) identifier for the practice (not displayed in the message). This includes codes to use where there is no registered GP practice.;</span>;"
+        },
+        "children": []
+      },
+      {
+        "title": "GP name",
+        "data": {
+          "description": "Where the patient or patient's representative offers the name of a GP as their usual GP",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>Patients are registered with GP Practices, so their usual GP name will be something volunteered by the patient or their representative</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "GP practice details",
+        "data": {
+          "description": "Name and address of the patient's registered GP Practice",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>\n        Registered GP Practice details are available from the Patient Demographics Service (PDS), or volunteered from the patient or their representative or provided by referral contact.Include details of the Practice name and address\n        <br/>\n        <br/>\n      </span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Patient demographics",
+    "data": {
+      "description": "Patient details and contact information.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Patient name",
+        "data": {
+          "description": "The full name of the patient",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The legal name of the patient from the PDS, or the name volunteered by the patient.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Date of birth",
+        "data": {
+          "description": "The date of birth of the patient.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The date of birth of the patient taken from PDS, or the date of birth volunteered by the patient (as recorded on the PAS (Patient Administration System). The date of birth will be as precise as possible, but should at least contain a year</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Gender",
+        "data": {
+          "description": "The patient's gender.  As the patient wishes to portray themselves.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>\n        Sent as per the ECDS Person Stated Gender code set:1 Male;2 Female;9 Indeterminate;;X Unknown;\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n      </span>"
+        },
+        "children": []
+      },
+      {
+        "title": "NHS number",
+        "data": {
+          "description": "The unique identifier for a patient within the NHS in England and Wales.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>\n        Sent as per the NHS Data Dictionary NHS number.Traced and verified NHS Numbers only should be used i.e. NHS;\n        <br/>\n        <br/>\n      </span>\n    \n    \n      <span>\n        ;value 01;If there is no NHS number then this data item should be reported as null and other unique identifiers will need to flow.\n        <br/>\n      </span>\n    \n    <a href=\"http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/n/nhs/nhs_number_status_indicator_code_de.asp?shownav=1\">\n      \n        <span>number status indicator code:</span>\n      \n    </a>"
+        },
+        "children": []
+      },
+      {
+        "title": "Other identifier",
+        "data": {
+          "description": "Country specific or local identifier, e.g., Community Health Index (CHI) in Scotland. Two data items: type of identifier and identifier.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>Recorded as per NHS Data Dictionary: - Local patient identifier, -Local patient identified (extended),; -Health and Care number, -Community Health Index number</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient address",
+        "data": {
+          "description": "Patient’s usual place of residence.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Sent in accordance with the NHS Data Dictionary: patient usual address.</span><span>May be auto generated from PDS, GP referral record, or from the local PAS.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient email address",
+        "data": {
+          "description": "Email address of the patient",
+          "mro": "optional",
+          "cardinality": "0 to 1",
+          "values": "<span>Set in accordance with the NHS Data Dictionary: contact email address (patient or lead contact). May be auto generated from PDS, GP referral record, or from the local PAS.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient telephone number",
+        "data": {
+          "description": "Telephone contact details of the patient. To include, e.g., mobile, work and home number if available.",
+          "mro": "optional",
+          "cardinality": "0 to many",
+          "values": "<span>Contact details may come from PDS, or those recorded on the local PAS.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Educational establishment ",
+        "data": {
+          "description": "If the patient is a child, name and address of where the child attends, eg play group, nursery, school.",
+          "mro": "optional",
+          "cardinality": "0 to 1",
+          "values": "<span>Free text or ODS code where available.</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Attendance details",
+    "data": {
+      "description": "The details of the patient contact.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date and time of contact",
+        "data": {
+          "description": "Date and time of the appointment, contact or attendance.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The date as recorded on the PAS</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Referrer details",
+    "data": {
+      "description": "Details of the individual or team who referred the patient.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Referrer details",
+        "data": {
+          "description": "Name, role, grade, organisation and contact details of referrer. If not an individual, this could be e.g. GP surgery, department, specialty, sub-specialty, educational institution, mental health team etc. Also needs to include self-referral.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Sent as per the ECDS Emergency Care Attendance Source code set (SNOMED CT).</span>;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Presenting complaints or issues",
+    "data": {
+      "description": "The description of the health problems and issues experienced by the patient resulting in their attendance.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Presenting complaints or issue",
+        "data": {
+          "description": "The list and description of the health problems and issues experienced by the patient resulting in the attendance. This may include disease state, medical condition, response and reaction to therapies, eg blackout, dizziness, chest pain, follow-up from admission, falls, a specific procedure, investigation or treatment.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Only ONE (chief complaint) sent as per the ECDS Emergency Care Chief Complaint code set (SNOMED CT).</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Clinical narrative",
+    "data": {
+      "description": "A brief description of the encounter.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Clinical narrative",
+        "data": {
+          "description": "A description detailing a patient’s reason for attendance, results from the diagnostic and treatment process.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Free text.</span>;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Diagnoses",
+    "data": {
+      "description": "A list of the patient's diagnoses.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Diagnosis name",
+        "data": {
+          "description": "Confirmed diagnosis (or symptom); active diagnosis being treated.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Sent as per the ECDS Emergency Care Diagnosis code set (SNOMED CT). Where the ECDS diagnosis qualifier is &#x2018;suspected diagnosis&#x2019;, the chief complaint should be entered here (see implementation guidance).;</span>;"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Supporting text may be given covering diagnosis confirmation, active diagnosis being treated.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>Free text.</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Procedures",
+    "data": {
+      "description": "The details of any procedures performed.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": " Procedure name",
+        "data": {
+          "description": "The therapeutic or diagnostic procedure performed.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Choice of;</span>;<li>\n      \n        <span>Text</span>\n      \n    </li>\n    <li>\n      \n        <span>Coded text &#x2013; constraint: SNOMED CT.; A subset / refset containing a list of therapeutic and diagnostic procedures.; Constraint binding: [SNOMED CT] subset=???ProceduresSnCT</span>\n      \n    </li>\n    <li>\n      \n        <span>\n          ECDS SNOMED CT (Investigations and Treaments) subsets\n          <br/>\n          <br/>\n        </span>\n      \n      \n        <span/>\n      \n    </li>"
+        },
+        "children": []
+      },
+      {
+        "title": "Anatomical site",
+        "data": {
+          "description": "The body site of the procedure",
+          "mro": "optional",
+          "cardinality": "0 to 1",
+          "values": "<span>Choice of;</span><li>\n      \n        <span>Text</span>\n      \n    </li>\n    <li>\n      \n        <span>Coded text &#x2013; constraint: SNOMED CT.; A subset / refset containing a list of body sites.; Constraint binding: [SNOMED CT] subset=???AnatomicalSiteSnCT</span>\n      \n    </li>"
+        },
+        "children": []
+      },
+      {
+        "title": "Laterality",
+        "data": {
+          "description": "Laterality of the procedure",
+          "mro": "optional",
+          "cardinality": "0 to 1",
+          "values": "<span>Choice of;</span><li>\n      \n        <span>Text</span>\n      \n    </li>\n    <li>\n      \n        <span>Coded text &#x2013; constraint: SNOMED CT.; A subset / refset containing a list of lateralities.; Constraint binding: [SNOMED CT] subset=???Laterality</span>\n      \n    </li>"
+        },
+        "children": []
+      },
+      {
+        "title": "Complications related to procedure",
+        "data": {
+          "description": "Details of any intra-operative complications encountered during the procedure, arising during the patient’s stay in the recovery unit or directly attributable to the procedure.",
+          "mro": "optional",
+          "cardinality": "0 to many",
+          "values": "<span>Choice of;</span>;<li>\n      \n        <span>Text</span>\n      \n    </li>\n    <li>\n      \n        <span>Coded text &#x2013; constraint: SNOMED CT.; A subset / refset containing a list of complications.; Constraint binding: [SNOMED CT] subset=??? ProcedureComplicationsSnCT</span>\n      \n    </li>"
+        },
+        "children": []
+      },
+      {
+        "title": "Specific anaesthesia issues",
+        "data": {
+          "description": "Details of any adverse reaction to any anaesthetic agents including local anaesthesia.  Problematic intubation, transfusion reaction, etc.",
+          "mro": "optional",
+          "cardinality": "0 to many",
+          "values": "<span>Choice of;</span><li>\n      \n        <span>Text</span>\n      \n    </li>\n    <li>\n      \n        <span>Coded text &#x2013; constraint: SNOMED CT.; A subset / refset containing a list of anaesthesia adverse reactions.; Constraint binding: [SNOMED CT] subset=??? AnaestheticReactionSnCT</span>\n      \n    </li>"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Any further textual comment to clarify such as statement that information is partial or incomplete.",
+          "mro": "optional",
+          "cardinality": "0 to 1",
+          "values": "<span>Text</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Medications and Medical Devices ",
+    "data": {
+      "description": "The details of and instructions for medications and medical equipment the patient is using.",
+      "mro": "optional",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Medication item cluster",
+        "data": {
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Medication name",
+            "data": {
+              "description": "May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d. \n    Comment: e.g.“Citalopram tab 20mg”, \"Trimethoprim\"",
+              "mro": "mandatory",
+              "cardinality": "1 only",
+              "values": "<span>;Choice of</span>;;<li>Text</li>\n    <li>Coded text &#x2013; constraint: MedicationName.; Any AMP/VMP/VTM/AMPP/VMPP subsets from the dm+d terminology. NHS dm+d AMP ::352201000001139 NHS dm+d AMPP ::352401000001135 NHS dm+d VMP ::352701000001133 NHS dm+d VMPP ::352301000001131 NHS dm+d VTM ::352601000001138. Constraint binding: [dm+d]subset=NHS_dm+d</li>"
+            },
+            "children": []
+          },
+          {
+            "title": "Form",
+            "data": {
+              "description": "Form of the medicinal substance e.g capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber.  \n    Comment: e.g. \"Modified Release \n    \n      \n        Capsules\"",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Choice of</span>;<li>Text</li>\n    <li>Coded text &#x2013; constraint: DrugDoseForm. SNOMED CT CfH DoseForm termset. Any descendant of 421967003 | drug dose form. Constraint binding: [SNOMED CT]subset=CfH DoseForm</li>"
+            },
+            "children": []
+          },
+          {
+            "title": "Route",
+            "data": {
+              "description": "Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube).Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used e.g. The Route is 'intraocular' the  Site may be 'Left eye'.   \n    Comment: e.g. \"Oral\", \"Intraocular\". Note that this element supports\n    \n      \n        multiple Routes to allow a choice to be specified by the prescriber",
+              "mro": "optional",
+              "cardinality": "0 to many",
+              "values": "TextCoded text &#x2013; constraint: NHS e-prescribing route of administration subset ID: 413001000001136 Original Id : 30201000001137 This is an extract from the SUBSET -BiAnnual-Drug-15.0.1-20130401: SnomedCT_GB1000001_20130401/Subsets/EPrescribing/NHS e-Prescribing route of administration subset. Constraint binding: [SNOMED-CT]subset=NHS e-Prescribing route of administration subset;"
+            },
+            "children": []
+          },
+          {
+            "title": "Site",
+            "data": {
+              "description": "The anatomical site at which the medication is to be administered.  \n    Comment: e.g. \"Left eye\"",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>\n        <br/>\n      </span><span>\n        <br/>\n      </span>;<li>Text</li>\n    <li>Coded text &#x2013; constraint: SiteOfMedicationAdministration.; Any valid site for the administration of a medication.; Constraint binding: [SNOMED-CT]subset= SiteOfMedicationAdministration;</li>"
+            },
+            "children": []
+          },
+          {
+            "title": "Method",
+            "data": {
+              "description": "The technique or method by which the medication is to be administered.",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Text</span><span>\n        <br/>\n      </span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose directions description",
+            "data": {
+              "description": "A single plain text phrase describing the entire medication dosage and administration directions, including dose quantity and medication frequency.  \n    Comment: e.g. “I tablet at night” or “20mg at 10pm” This is the form of dosage direction text normally available from UK GP systems.",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Text</span><span>\n        <br/>\n      </span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose amount description ",
+            "data": {
+              "description": "A plain text description of medication single dose amount, as described in the AoMRC medication headings.  \n    Comment: e.g. \"30 mg\" or \"2 tabs\". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency descriptions concatenated into the single Dose directions description.",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Text</span><span>\n        <br/>\n      </span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose timing description",
+            "data": {
+              "description": "A plain text description of medication dose frequency, as described in the AoMRC medication headings.  \n    Comment: e.g. \"Twice a day\", \"At 8am 2pm and 10pm\". UK Secondary care clinicians and systems normally minimally structure their dose directions, separating Dose amount and Dose timing (often referred to as Dose and Frequency). This format is not normally used in GP systems, which will always import Dose and Frequency \n    \n      \n        descriptions concatenated into the single Dose directions description",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "Text<span>\n        <br/>\n      </span><span>\n        <br/>\n      </span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Parsable dose directions ***",
+            "data": {
+              "description": "A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  \n    Comment: e.g. \"20-30mg ^4/6h prn [180mg /24h]\" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the Additional Instruction element. Note that this is generally a symptom and is not the same as the Indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while Structured dose directions are likely to be used only \n    \n      \n        within openEHR-based systems",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "Text<span/><span/><span>*** Data items acting as placeholders for future &#x2018;advanced&#x2019; structured dose syntax solution.; In sufficient information to detail these further at present</span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose direction cluster",
+            "data": {
+              "description": "A structural representation of the elements carried by the dose syntax in 'Parsable doseStrength / timing' i.e. dose strength, dose timing, dose duration and maximum dose",
+              "mro": "optional",
+              "cardinality": "0 to many",
+              "values": "<span>\n        <br/>\n      </span><span>\n        <br/>\n      </span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose amount cluster ***",
+            "data": {
+              "description": "A structural representation of dose amount.  \n    Comment: e.g. 20mg or 2 tablets This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.",
+              "mro": "optional",
+              "cardinality": "-1",
+              "values": "<span/><span/><span>*** Data items acting as placeholders for future &#x2018;advanced&#x2019; structured dose syntax solution.; In sufficient information to detail these further at present</span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose timing cluster ***",
+            "data": {
+              "description": "A slot containing a structural, computable representation of dose timing and maximum dose.  \n    Comment: This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.",
+              "mro": "optional",
+              "cardinality": "-1",
+              "values": "<span/><span/><span>*** Data items acting as placeholders for future &#x2018;advanced&#x2019; structured dose syntax solution.; In sufficient information to detail these further at present</span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose direction duration",
+            "data": {
+              "description": "Recommendation of the time period for which the medication should be continued, including direction not to discontinue.",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Choice of Coded Text</span><span>\n        <b>;</b>\n      </span><span>\n        <b>;</b>\n      </span><span/><span/><span/>;<li>\n      \n        <span>Continue indefinitely [The medication should be continued indefinitely.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Do not discontinue [The medication should be continued indefinitely and the prescriber highly recommends that it should never be discontinued. This is an AoMRC Clinical Headings recommendation.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Stop when course complete. [The medication should be stopped when the currently prescribed course has been completed.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Duration:; Allowed values: years, months, weeks, days, hours &gt;=0 days</span>\n      \n    </li>"
+            },
+            "children": []
+          },
+          {
+            "title": "Additional instruction ",
+            "data": {
+              "description": "Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as \"Patient advice' or 'Dispensing Instruction' to capture these flavours of instruction.  \n    Comment: e.g. “Omit \n    \n      \n         \n      \n      \n        morning dose on day of procedure”, \"for pain or fever\", \"Dispense weekly\".",
+              "mro": "optional",
+              "cardinality": "0 to many",
+              "values": "Text;<span>Runtime name constraint:;</span><span/><span/><span/>;<li>\n      \n        <span>Additional instruction [Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific Administration Instructions may be re-labelled as &quot;Patient advice&apos; or &apos;Dispensing Instruction&apos; to capture these flavours of instruction.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Dispensing instruction [Multiple plain text to record complex dispensing arrangements, particularly for Controlled Drug instalment dispensing. &apos;Dispensing instructions&apos; may be used as a specific label to overwrite &apos;Additional instructions&apos; to align with legacy GP system behaviour.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Patient advice [Multiple plain text instructions intended for patient or carer. &apos;Patient advice&apos; may be used as a specific label to overwrite &apos;Additional instructions&apos; to align with legacy GP system behaviour.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Monitoring [Special instructions related to monitoring of medication, such as lab tests.]</span>\n      \n    </li>"
+            },
+            "children": []
+          },
+          {
+            "title": "Course details cluster",
+            "data": {
+              "description": "Details of the overall course of medication.",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span/><span/>;"
+            },
+            "children": [
+              {
+                "title": "Course status **",
+                "data": {
+                  "description": "The status of this prescription in an ambulatory (outpatient/GP/community) context",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>Choice of Coded text</span><span/><span>** Data item not relevant to Hospital to GP discharge summary</span>;<span/>;<li>\n      \n        <span>Active [This is an active medication.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Discontinued [This is a medication that has been issued. dispensed or administered but has now been discontinued.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Never active [A medication which was ordered or authorised but has been cancelled prior to being issued, dispensed or administered.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Completed [The medication course has been completed.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Obsolete [This medication order has been superseded by another.]</span>\n      \n    </li>"
+                },
+                "children": []
+              },
+              {
+                "title": "Start date/time",
+                "data": {
+                  "description": "The date and/or time that the medication course should begin.",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>Date/time</span><span>\n        <br/>\n      </span>;"
+                },
+                "children": []
+              },
+              {
+                "title": "End date/time",
+                "data": {
+                  "description": "The date and/or time that the medication course should finish.",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>Date/time</span>;"
+                },
+                "children": []
+              },
+              {
+                "title": "Indication",
+                "data": {
+                  "description": "Reason for medication being prescribed, where known.",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "A free text or Coded text term giving the clinical indication or reason for ordering the medication. Coded terms are preferable.;;\n    <i>Comment: e.g. &quot;Angina&quot;. The Indication generally describes a condition or diagnosis</i>;"
+                },
+                "children": []
+              },
+              {
+                "title": "Link to indication record",
+                "data": {
+                  "description": "A link to the record which contains the Indication for this medication order.",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>URL</span>;"
+                },
+                "children": []
+              },
+              {
+                "title": "Comment/recommendation",
+                "data": {
+                  "description": "Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>Free text. Additional comment or recommendation about the medication course e.g. &apos;Patient named supply&apos;, &apos;unlicensed medication&apos;, &apos;Foreign brand&apos; or monitoring recommendations</span>"
+                },
+                "children": []
+              }
+            ],
+            "folder": true
+          },
+          {
+            "title": "Medication change summary cluster",
+            "data": {
+              "description": "Records the changes made to medication since admission",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span/><span/>;"
+            },
+            "children": [
+              {
+                "title": "Status",
+                "data": {
+                  "description": "The nature of any change made to the medication since admission.",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>Choice of Coded text</span>;<li>\n      \n        <span>Continued [Medicine present on both admission and discharge with no amendments.]</span>\n      \n    </li>\n    <li>\n      \n        <span>Added [Medicine present on discharge but not on admission]</span>\n      \n    </li>\n    <li>\n      \n        <span>Amended [Medicine present on both admission and discharge but with amendment(s) since admission.]</span>\n      \n    </li>"
+                },
+                "children": []
+              },
+              {
+                "title": "Indication",
+                "data": {
+                  "description": "Reason for change in medication, eg sub-therapeutic dose, patient intolerant.",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>Text</span>"
+                },
+                "children": []
+              },
+              {
+                "title": "Date of latest change",
+                "data": {
+                  "description": "The date of the latest change - addition, or amendment",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>Date / time</span>;"
+                },
+                "children": []
+              },
+              {
+                "title": "Description of amendment",
+                "data": {
+                  "description": "Where a change is made to the medication ie one drug stopped and another started or eg dose, frequency or route is changed.",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "Text;"
+                },
+                "children": []
+              },
+              {
+                "title": "Comment",
+                "data": {
+                  "description": "Any additional comment about the medication change",
+                  "mro": "optional",
+                  "cardinality": "0 to 1",
+                  "values": "<span>Text</span>;;"
+                },
+                "children": []
+              }
+            ],
+            "folder": true
+          },
+          {
+            "title": "Total dose daily quantity cluster **",
+            "data": {
+              "description": "The total daily dose of this medication. This is helpful for estimating optimal adherence to dosing guidance. It may be computed from product/dose strength and frequency or entered manually.",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>\n        <b>;</b>\n      </span><span>** Data item not relevant to Hospital to GP discharge summary</span>;;;"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      },
+      {
+        "title": "Medical devices entry",
+        "data": {
+          "description": "Any therapeutic medical device of relevance that does not have representation in the NHS dictionary of medicines and medical devices (dm+d).",
+          "mro": "optional",
+          "cardinality": "0 to many",
+          "values": "<span>Text</span>;"
+        },
+        "children": []
+      },
+      {
+        "title": "Medication discontinued entry",
+        "data": {
+          "description": "",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Name of discontinued medication",
+            "data": {
+              "description": "The name of the medication or medical device being discontinued",
+              "mro": "mandatory",
+              "cardinality": "1",
+              "values": "<span>Text</span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Status",
+            "data": {
+              "description": "The nature of any change made to the medication since admission.",
+              "mro": "mandatory",
+              "cardinality": "1",
+              "values": "<span>Text</span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Indication",
+            "data": {
+              "description": "The clinical indication for any changes in medication status",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Text</span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Date of latest change",
+            "data": {
+              "description": "The date of the discontinuation",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Date / time</span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Description of amendment",
+            "data": {
+              "description": "A description of any amendment",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Text</span>;"
+            },
+            "children": []
+          },
+          {
+            "title": "Comment",
+            "data": {
+              "description": "Any additional comment about the medication change.",
+              "mro": "optional",
+              "cardinality": "0 to 1",
+              "values": "<span>Text</span>;"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Allergies and adverse reactions",
+    "data": {
+      "description": "The details of any known allergies, intolerances or adverse reactions.",
+      "mro": "required",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Causative agent",
+        "data": {
+          "description": "The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient. Or “No known drug allergies or adverse reactions” Or “Information not available”",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>\n        Choice of;&#x2022; Text&#x2022; Coded text &#x2013; constraint: SNOMED CT:;;\n        <br/>\n        <br/>\n      </span><span>Allergy Archetypes Drug Groups</span><span>\n        <br/>\n      </span>;<span>NHS dm+d TF,;</span><span>NHS dm+d TFG,;</span><span>NHS dm+d VMP,;</span><span>NHS dm+d AMP,</span><span>NHS dm+d Ingredients,;</span><span>NHS dm+d Combination drug VTMs,;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Reaction details cluster",
+        "data": {
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Description of reaction",
+            "data": {
+              "description": "A description of the manifestation of the allergic or adverse reaction experienced by the patient. For example, skin rash.",
+              "mro": "required",
+              "cardinality": "0 to 1",
+              "values": "<span>\n        Choice of;&#x2022; Text&#x2022; Coded text &#x2013; constraint: SNOMED CT.; Clinical finding. Any SNOMED CT term in the Clinical Finding hierarchy.; Constraint binding: [SNOMED CT] subset=Clinical Finding\n        <br/>\n        <br/>\n      </span>"
+            },
+            "children": []
+          },
+          {
+            "title": "Severity",
+            "data": {
+              "description": "A description of the severity of the reaction",
+              "mro": "required",
+              "cardinality": "0 to 1",
+              "values": "<span>\n        Coded text&#x2022; Mild [The reaction was mild.][SNOMED-CT::255604002] (Mild (qualifier value))&#x2022; Moderate [The reaction was moderate.][SNOMED-CT::6736007] (Moderate (severity modifier) (qualifier value))&#x2022; Severe [The reaction was severe.][SNOMED-CT::24484000] (Severe (severity modifier) (qualifier value))&#x2022; Life threatening [The reaction was life-threatening.][SNOMED-CT::442452003] (Life threatening severity (qualifier value))&#x2022; Fatal [The reaction was fatal.][SNOMED-CT::399166001] (Fatal (qualifier value))\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n      </span>"
+            },
+            "children": []
+          },
+          {
+            "title": "Certainty",
+            "data": {
+              "description": "A description of the certainty that the stated causative agent caused the allergic or adverse reaction.",
+              "mro": "required",
+              "cardinality": "0 to 1",
+              "values": "<span>\n        Coded text&#x2022; Unlikely [The reaction is thought unlikely to have been caused by the agent.][SNOMED-CT::1491118016]&#x2022; Likely [The reaction is thought likely to have been caused by the agent.][SNOMED-CT::5961011]&#x2022; Certain [The agent is thought to be certain to have caused the reaction but this has not been confirmed by challenge testing.][SNOMED-CT::255545003] (Definite (qualifier value))&#x2022; Confirmed by challenge testing [The reaction to the agent has been confirmed by challenge testing or other concrete evidence.][SNOMED-CT::410605003] (Confirmed present (qualifier value))\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n        <br/>\n      </span>"
+            },
+            "children": []
+          },
+          {
+            "title": "Comment",
+            "data": {
+              "description": "Any additional comment or clarification about the adverse reaction.",
+              "mro": "required",
+              "cardinality": "0 to 1",
+              "values": "<span>Free text</span>;"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Safety alerts",
+    "data": {
+      "description": "The details of any risks the patient poses to themselves or others.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Risks to self",
+        "data": {
+          "description": "Risks the patient poses to themselves, e.g., suicide, overdose, self-harm, self-neglect.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>A statement of any risks identified by the clinician. Text.</span><span>ECDS SNOMED CT Safeguarding subset</span>;;"
+        },
+        "children": []
+      },
+      {
+        "title": "Risks to others",
+        "data": {
+          "description": "Risks caring professionals or others.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>A statement of any risks identified by the clinician. Text.</span><span>ECDS SNOMED CT Safeguarding subset</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Risk from others ",
+        "data": {
+          "description": "Details of where an adult or child is at risk from an identified person e.g. family member etc.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>A statement of any risks identified by the clinician. Text.</span><span>ECDS SNOMED CT safeguarding subset.</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Safeguarding",
+    "data": {
+      "description": "Details of any identified safeguarding concerns.",
+      "mro": "required",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Safeguarding issue",
+        "data": {
+          "description": "A record of any identification of concerns regarding safeguarding during attendance",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>ECDS SNOMED CT Safeguarding subset.;</span><span>Text.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "A comment providing further detail on a safeguarding issue.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>Free text</span>;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Discharge details",
+    "data": {
+      "description": "The details of the patient's discharge from hospital.",
+      "mro": "required",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Discharge status",
+        "data": {
+          "description": "Patient status on discharge from emergency care.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Sent as per the ECDS Emergency Care Discharge</span><span>Status code set (SNOMED CT):</span>\n      <span>.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Date/time of discharge",
+        "data": {
+          "description": "The actual date of discharge",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The date and time of discharge as recorded by the PAS or discharging system.</span>;"
+        },
+        "children": []
+      },
+      {
+        "title": "Discharge destination",
+        "data": {
+          "description": "The destination of the patient on discharge. National codes. Eg, High Dependency Unit.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Sent as per the ECDS Emergency Care Discharge Destination code set (SNOMED CT).</span>;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Information and advice given",
+    "data": {
+      "description": "A record of any information or advice given to the patient, carer or relevant third party.",
+      "mro": "mandatory",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Information and advice given",
+        "data": {
+          "description": "This includes:-what information-to whom it was given.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Free text description of information and advice given and patient/carer comprehension</span><span>For this use case this element also includes ECDS Emergency Care Discharge Information Given code set (SNOMED CT):</span><li>\n      \n        <span>Copy of discharge letter NOT provided to patient</span>\n      \n    </li>\n    <li>\n      \n        <span>Copy of discharge letter provided to patient</span>\n      \n    </li>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Plan and requested actions",
+    "data": {
+      "description": "The details of planned investigations, procedures and treatment, and whether this plan has been agreed with the patient or their legitimate representative.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Action",
+        "data": {
+          "description": "Including planned investigations, procedures, Interventions and treatment for a patient’s identified conditions and priorities. For each action the following should be identified: a) person responsible - name and designation / department / hospital / patient etc or role (eg GP) responsible for carrying out the proposed action, and where action should take place.b) status - requested, planned or completed.                                c) When action requested for - requested date, time, or period - as relevant.d) suggested strategies - suggested strategies for potential problems.e) outcome expectations, including patient’s expectations",
+          "mro": "mandatory",
+          "cardinality": "1 to many",
+          "values": "<span>A record of the planned and requested actions. May be structured (table), with actions, names, dates, status, location, strategies, or free text</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Person completing record",
+    "data": {
+      "description": "The details of the person who filled out the record.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Name",
+        "data": {
+          "description": "The name of the person completing the record, preferably in a structured format.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The person name as held on the source system. Where possible this should be broken down into its constituent parts (prefix, given name, family name, and suffix).;</span>;"
+        },
+        "children": []
+      },
+      {
+        "title": "Professional identifier",
+        "data": {
+          "description": "Professional identifier for the person completing the record e.g., GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The professional identifier type (</span>\n    \n    \n      <span>) and the identifier (</span>\n    \n    \n      <span>) itself as held on the source system.;;</span>\n    \n    <a href=\"http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/p/prod/professional_registration_issuer_code_de.asp?shownav=1\">\n      \n        <span>professional registration issuer code</span>\n      \n    </a>\n    <a href=\"http://www.datadictionary.nhs.uk/data_dictionary/data_field_notes/p/prod/professional_registration_entry_identifier_de.asp?shownav=1\">\n      \n        <span>professional registration entry identifier</span>\n      \n    </a><span>An identifier for the person completing the record will be sent (but may not be displayed in the rendered message).</span>\n      <span>;;</span>;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Senior reviewing clinician",
+    "data": {
+      "description": "The details of the senior clinician who reviewed the record.",
+      "mro": "mandatory",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Name",
+        "data": {
+          "description": "The name of the senior clinician responsible for reviewing the patient treatment and discharge plan.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The person name as held on the source system. Where possible this should be broken down into its constituent parts (prefix, given name, family name, suffix).;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Professional identifier",
+        "data": {
+          "description": "The unique identifier issued by the regulatory body e.g., GMC number, HCPC number etc.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The professional identifier type and the identifier itself as held on the source system. An identifier for the person completing the record will be sent (but may not be displayed in the rendered message). ;</span>;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Contact for further information",
+    "data": {
+      "description": "Details of a contact who can provide further information.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Contact for further information",
+        "data": {
+          "description": "The contact details of whom to contact for information regarding this attendance.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The contact details may be for an individual or; team (for example a phone number for the emergency department administrator). Free text.;</span>;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  }
+]

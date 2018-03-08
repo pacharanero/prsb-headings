@@ -1,0 +1,1209 @@
+[
+  {
+    "title": "Person demographics ",
+    "data": {
+      "description": "Patient details and contact information.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Person name",
+        "data": {
+          "description": "The full name of the person",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The legal name of the patient. This will normally be volunteered by the patient or their carer or representative; given by a Patient Demographics Service (PDS) patient trace; or, the name of the patient held on the local Patient Administration System (PAS).</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Person preferred name",
+        "data": {
+          "description": "The name by which a person wishes to be addressed.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The preferred name volunteered by the patient and recorded on the Patient Administration System (PAS), or a preferred name given by PDS that the patient has asked to be called by.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Person alias",
+        "data": {
+          "description": "Record details where a person is known to use assumed identities to access health/care services.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>Other name(s) associated with the person which may be recorded on the local PAS.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Date of birth",
+        "data": {
+          "description": "The date of birth of the person.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The date of birth of the patient taken from PDS, or the date of birth volunteered by the patient (as recorded on the PAS (Patient Administration System). The date of birth will be as precise as possible, but should at least contain a year</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Sex",
+        "data": {
+          "description": "The person’s phenotypic sex. Determines how the person will be treated clinically.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>1 Male&#xA0;</span><span>2 Female&#xA0;</span><span>9 Indeterminate</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Gender",
+        "data": {
+          "description": "The patient's gender.  As the person wishes to portray themselves.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>0 Not known&#xA0;</span><span>1 Male&#xA0;</span><span>2 Female&#xA0;</span><span>9 Not specified</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Ethnicity",
+        "data": {
+          "description": "The ethnicity of a person as specified by the person.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The ethnic cateogory codes defined in the 2001 national census or the Office for National Statistics (ONS) ethnic category codes should be used.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Religion",
+        "data": {
+          "description": "The religious affiliation as specified by the person.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The religious affiliation as volunteered by the person. Use SNOMED CT subset 10791000000130 or free text.&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "NHS number",
+        "data": {
+          "description": "The unique identifier for a person within the NHS in England and Wales.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>Sent as per the NHS Data Dictionary NHS number.</span><span>Traced NHS Numbers only should be used.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Other identifier",
+        "data": {
+          "description": "Country specific or local identifier, e.g., Community Health Index (CHI) in Scotland. Two data items: type of identifier and identifier.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>Recorded as per: NHS Data Dictionary - local identifier.&#xA0;</span><span>\n        <br/>\n      </span><span>The assigning authority should also be supplied along with the country or local identifier.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Person address",
+        "data": {
+          "description": "Person's usual place of residence.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>Sent in accordance with the NHS Data Dictionary: patient usual address&#xA0;</span><span>\n        <br/>\n      </span><span>May be auto generated from PDS, GP record, or from the local PAS.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Person email address",
+        "data": {
+          "description": "Email address of the person",
+          "mro": "optional",
+          "cardinality": "0 to 1",
+          "values": "<span>Set in accordance with the NHS Data Dictionary: contact email address (patient or lead contact). May be auto generated from PDS, GP referral record, or from the local PAS.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Person telephone number",
+        "data": {
+          "description": "Telephone contact details of the person. To include, e.g., mobile, work and home number if available.",
+          "mro": "optional",
+          "cardinality": "0 to many",
+          "values": "<span>Contact details may come from PDS, or those recorded on the local PAS.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Relevant contacts",
+        "data": {
+          "description": "Include the most important contacts including:*Personal contacts e.g., next of kin, in case of emergency contact, lasting power of attorney, dependants, informal carers etc.*Health/care professional contacts e.g., social worker, hospital clinician, care coordinator, Independent Mental Capacity Advocate (IMCA) etc.Name, relationship, role (if formal role), contact details and availability, eg out of hours.",
+          "mro": "optional",
+          "cardinality": "0 to 1",
+          "values": "<span>Details of relevant contacts, as recorded on the local system, or volunteered by the person.</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Individual requirements ",
+    "data": {
+      "description": "Individual requirements that a person has, e.g. communication, cultural, cognitive or mobility needs. ",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Individual requirements",
+        "data": {
+          "description": "Individual requirements that a person has. These may be communication, cultural, cognitive or mobility needs.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>Information volunteered by the person or their representative or known about locally. Free text or coded text (SNOMED CT subsets). See SCCI1605 Accessible Information: Specification.</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "GP practice ",
+    "data": {
+      "description": "Details of the GP practice where the patient is registered.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "GP name",
+        "data": {
+          "description": "Where the patient or patient's representative offers the name of a GP as their usual GP",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The person&apos;s usual GP name will be something volunteered by the person or their representative.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "GP practice details",
+        "data": {
+          "description": "Name and address of the patient's registered GP Practice",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>\n        Registered GP Practice details are available from the Patient Demographics Service (PDS), or volunteered from the patient or their representative or provided by referral contact.Include details of the Practice name and address\n        <br/>\n        <br/>\n      </span>"
+        },
+        "children": []
+      },
+      {
+        "title": "GP practice identifier",
+        "data": {
+          "description": "The identifier of the registered GP Practice.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>This should be the Organisation Data Services (ODS) identifier for the practice.</span>&#xA0;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Problems and issues",
+    "data": {
+      "description": "A summary of the problems that require investigation or treatment.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Problems and issues",
+        "data": {
+          "description": "Summary of problems that require investigation or treatment. This would include significant examination findings, symptoms and signs, which are likely to have relevance and are not a diagnosis.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>Free text or coded form (SNOMED CT). &#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Clinical risks",
+        "data": {
+          "description": "Description of clinical risks identified e.g. problematic intubation, person with brittle diabetes, immuno-compromised/risk of infection etc.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>Free text or coded form (SNOMED CT). &#xA0;</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Diagnoses",
+    "data": {
+      "description": "A list of the patient's diagnoses.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Diagnosis name",
+        "data": {
+          "description": "Confirmed diagnosis (or symptom); active diagnosis being treated.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>SNOMED CT concept and/or free text.</span><span>\n        <br/>\n      </span><span>By preference the diagnosis is represented by a SNOMED CT concept. If this is not possible, a free text description of the diagnosis may be given.</span><span>\n        <br/>\n      </span><span>Supporting text may be given covering diagnosis confirmation, active diagnosis being treated, stage of the disease where relevant.</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Awareness of diagnosis",
+        "data": {
+          "description": "Description of the level of awareness the person and or their carer/family has regarding their diagnosis.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The awareness statement made by a clinician.</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "History",
+    "data": {
+      "description": "Information relating to the development of each presenting complaint, and the patient's relevant health history.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Relevant past medical, surgical and mental health history",
+        "data": {
+          "description": "The record of the person’s significant medical, surgical and mental health history. Including relevant previous diagnoses, problems and issues, procedures, investigations, specific anaesthesia issues, etc (will include dental and obstetric history)",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>A list of the person&apos;s relevant past medical, surgical and mental health history recorded in free text or coded form.</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Medications and Medical Devices * ",
+    "data": {
+      "description": "",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Medication item cluster",
+        "data": {
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Medication name",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Form",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Route",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Site",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Method",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose directions description",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose amount description ",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose timing description",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Parsable dose directions ***",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose direction cluster",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose amount cluster ***",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose timing cluster ***",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose direction duration",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Additional instruction ",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Course details cluster",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": [
+              {
+                "title": "Course status **",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Start date/time",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "End date/time",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Indication",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Link to indication record",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Comment/recommendation",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              }
+            ],
+            "folder": true
+          },
+          {
+            "title": "Medication change summary cluster",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": [
+              {
+                "title": "Status",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Indication",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Date of latest change",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Description of amendment",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Comment",
+                "data": {
+                  "description": "",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              }
+            ],
+            "folder": true
+          },
+          {
+            "title": "Total dose daily quantity cluster **",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      },
+      {
+        "title": "Medical devices entry",
+        "data": {
+          "description": "",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Medication discontinued entry",
+        "data": {
+          "description": "",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Name of discontinued medication",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Status",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Indication",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Date of latest change",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Description of amendment",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Comment",
+            "data": {
+              "description": "",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Allergies and adverse reactions",
+    "data": {
+      "description": "The details of any known allergies, intolerances or adverse reactions.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Causative agent",
+        "data": {
+          "description": "The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this patient. Or “No known drug allergies or adverse reactions” Or “Information not available”",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>SNOMED CT concept and/or free text</span><span>You need to refer to dm+d.&#xA0; Specific drugs are covered by dm+d, e.g. cephalexin and there are plans to add pharmacological group content (based on BNF information) to the SNOMED CT UK Drug Extension to group these specific drugs.Work is also underway in Scotland (led by Leo Fogarty) to define drug groups, e.g. penicillins, with plans to deliver by April 2016. &#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Description of reaction",
+        "data": {
+          "description": "A description of the manifestation of the allergic or adverse reaction experienced by the patient. For example, skin rash.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>SNOMED CT concept and/or free text</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Legal information",
+    "data": {
+      "description": "Legal information captured relating to patient care, such as consent to treatment and mental capacity.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Consent for information sharing",
+        "data": {
+          "description": "This is a record of consent for information sharing. Where consent has been not been obtained or sought, the reason why must be provided. Include best interests decision where person lacks capacity.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>This is a record of the person&apos;s consent to information sharing.&#xA0;&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Parental responsibility",
+        "data": {
+          "description": "For children this is a record of person(s) with parental responsibility",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>This is a record of the name as volunteered by the parents or recorded on local systems. The contact information for these individuals should be included under the relevant contacts heading.&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Deprivation of Liberty Safeguards or equivalent",
+        "data": {
+          "description": "Record of Deprivation of Liberty Safeguards (DoLS) or equivalent, including the reason for this.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>Free text.</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Mental Health Act or equivalent status",
+        "data": {
+          "description": "Record where a person diagnosed with a mental disorder is formally detained under the Mental Health Act or equivalent, including the section number and start date, start time and end date. If person subject to Community Treatment Order or Conditional Discharge (or equivalent) record here.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The record of the current Mental Health Act status of the person as recorded on the PAS. This would include the section number and the dates/times for which it applies.&#xA0;</span><span>&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Advance decision to refuse treatment (ADRT)",
+        "data": {
+          "description": "A record of an advance decision to refuse one or more specific types of future treatment, made by a person who had capacity at the time of recording the decision. The decision only applies when the person no longer has the capacity to consent to or refuse the specific treatment being considered. An ADRT must be in writing, signed and witnessed. If the ADRT is refusing life-sustaining treatment it must state specifically that the treatment is refused even if the person’s life is at risk.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>SNOMED CT codes (see National Information Standard (SCCI1580) and associated text. Location of ADRT should be recorded as free text. Where available a copy of the ADRT may be appended to the record. Where there has been a change in the ADRT this should be noted in the record in free text.&#xA0;</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Lasting power of attorney  for personal welfare  or court-appointed deputy (or equivalent)",
+        "data": {
+          "description": "Record of one or more people who have been given power (LPA) by the person when they had capacity to make decisions about their health and welfare should they lose capacity to make those decisions. To be valid, an LPA must have been registered with the Court of Protection. If life-sustaining treatment is being considered the LPA document must state specifically that the attorney has been given power to consent to or refuse life-sustaining treatment. Details of any person (deputy) appointed by the court to make decisions about the person’s health and welfare. A deputy does not have the power to refuse life-sustaining treatment.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>The name of the LPA should be recorded. The authority of the LPA should be recorded as SNOMED CT codes (see National Information Standard (SCCI1580) and associated text must be displayed. Where available a copy of the documentation may be appended to the record. The contact details of the LPA should be recorded under the relevant contacts heading.&#xA0;</span><span>&#xA0;</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Organ and tissue donation",
+        "data": {
+          "description": "Whether the person has given consent for organ and/or tissue donation or opted out of automatic donation where applicable. The location of the relevant information/documents.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>This is information provided by national register or by patient. Text.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Safeguarding issues",
+        "data": {
+          "description": "Any legal matters relating to safeguarding of a vulnerable child or adult, e.g., child protection plan, protection of vulnerable adult.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>This is free text. Information obtained locally.&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Consent for creation of end of life care plan",
+        "data": {
+          "description": "Separate explicit consent is required for creation of an end of life care record. This records how this consent has been granted in order to differentiate between person’s explicit consent, best interest decision, Lasting Power of Attorney decision and withdrawal of consent.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>End of life care plan use case only. This is a record of consent to create an end of life care plan.&#xA0;</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Safety alerts",
+    "data": {
+      "description": "The details of any risks the patient poses to themselves or others.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Risks to self",
+        "data": {
+          "description": "Risks the patient poses to themselves, e.g., suicide, overdose, self-harm, self-neglect.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>A statement of any risks identified.</span>&#xA0;&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Risks to others",
+        "data": {
+          "description": "Risks caring professionals or others.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>A statement of any risks identified.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Risk from others ",
+        "data": {
+          "description": "Details of where an adult or child is at risk from an identified person e.g. family member etc.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>A statement of any risks identified.</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Social context",
+    "data": {
+      "description": "The social setting in which the patient lives, such as their household, occupational history, and lifestyle factors.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Household composition",
+        "data": {
+          "description": "E.g., lives alone, lives with family, lives with partner, etc. This may be free text.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>This is the record of the household composition. Where person lives alone this may be recorded as a separate item so that it can be easily seen.&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Access",
+        "data": {
+          "description": "Special access requirements e.g. key safe, coded lock, which door to use, stretcher access, etc.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>This is a description of any special access requirements. Text.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Dependants",
+        "data": {
+          "description": "Provide details of any responsibility the person has for dependants. In the case of minors provide additional details e.g., date of birth etc.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>This is a record of any dependant the person has caring responsibilities for, including contextual details. Contact details for dependants may be recorded under &apos;relevant contacts&apos;.&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Services and care",
+        "data": {
+          "description": "The description of services and care providing support for patient’s health and social wellbeing.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>This is the free text record of services and care as provided by the person or their representative.&#xA0;</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Person and carer concerns, expectations and wishes",
+    "data": {
+      "description": "A description of the concerns, expectations or wishes of the patient.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Person and carer concerns, expectations and wishes",
+        "data": {
+          "description": "Description of the concerns, wishes or goals of the person in relation to their care, as expressed by the person, their representative or carer. Record who has expressed these (patient or carer/ representative on behalf of the patient).Where the person lacks capacity this may include their representative's concerns, expectations or wishes.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span/>&#xA0;<span>A record of statements expressed by the person or their carer or representative. Text</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Preferred place of care",
+        "data": {
+          "description": "The preferences that a person has identified as their preferred place to receive care.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>A record of the preferences that a person has identified as their preferred place to receive care. Text</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Preferred place of death",
+        "data": {
+          "description": "The preferences that a person has identified as their preferred place to die.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>End of life care plan use case only. Preferences will be identified as 1st/2nd choice etc as given by the person. Each recorded preference should include the name of the place that the person has identified. It may also include coded values from the National Information Standard (SCCI1580), together with the associated text:</span><span>10: Hospital (Acute/Community/Other)</span><span>20: Private residence</span><span>21: Patient&apos;s own home</span><span>22: Other private residence (eg relatives home, carers home)</span><span>30: Hospice (inpatient specialist palliative care)</span><span>40: Care Home</span><span>50: Other (free text eg secure and detained settings)</span><span>&#xA0;</span><span>517111000000103 | Preferred place of death: patient unable to express preference</span><span>517131000000106 | Preferred place of death: discussion not appropriate</span><span>766391000000108 | Preferred place of death: patient declined discussion</span><span>517161000000101 | Preferred place of death: patient undecided</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Advance statement",
+        "data": {
+          "description": "Written requests and preferences made by a person with capacity conveying their wishes, beliefs and values for their future care should they lose capacity. Include the location of the document if known.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "&#xA0;<span>A record of the presence of an advance statement using the following&#xA0; SNOMED CT concept from the National Information Standard (SCCI1580):</span><span>\n          <br/>\n        </span><span>SNOMED CT: 816281000000101. Has advance statement (Mental Capacity Act 2005)</span><span>\n          <br/>\n        </span><span>The content of the advance statement should also be included as text where available.&#xA0;</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Crisis care plan",
+    "data": {
+      "description": "A record of the patient's crisis management plan, including their priorities of care and whether the plan has been agreed with the patient or their legitimate representative.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Care funding details",
+        "data": {
+          "description": "A record of the funding source and any conditions or limitations associated.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "End of life care plan use case only. Free text."
+        },
+        "children": []
+      },
+      {
+        "title": "Priorities of care",
+        "data": {
+          "description": "The priorities agreed  between the person and their health/care team, where the person has capacity:*to get better; please consider all treatment to prolong life.*to achieve a balance between getting better and ensuring good quality of life; please consider selected treatments.*comfort; please consider all treatments aimed at symptom control.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>A record of the priorities of care agreed by the person and their health/care team. This may include the following statements from the Resuscitation Council work:</span><span>&#xA0;</span><span>*to get better; please consider all treatment to prolong life. &#xA0;</span><span>*to achieve a balance between getting better and ensuring good quality of life; please consider selected treatments.&#xA0;</span><span>*comfort; please consider all treatments aimed at symptom control.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Estimated prognosis",
+        "data": {
+          "description": "Where a person is terminally ill this is a clinical judgment indicating the anticipated period of time until death.E.g., last days, weeks, months or year of life. Also include the date the prognosis was made.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>End of life care plan use case only. The prognosis estimated by a clinician.&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Awareness of prognosis",
+        "data": {
+          "description": "Description of the level of awareness the person and or their carer/family has regarding their estimated prognosis.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>End of life care plan use case only. The awareness statement made by a clinician.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Anticipatory actions",
+        "data": {
+          "description": "Please provide guidance on specific interventions or actions that may be required or should be avoided in specific situations.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>A statement of anticipatory actions. Usually expressed as: in the event of X do Y.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Anticipatory medicines/equipment",
+        "data": {
+          "description": "Medicines or equipment available in the event of a crisis and their location.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "A statement regarding the availability or location of the anticipatory medicines/equipment.<span>&#xA0;</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Agreed with person or legitimate representative",
+        "data": {
+          "description": "Indicates whether the crisis care plan was discussed and agreed with the person or legitimate representative. If agreement cannot be obtained the reason for this should be documented.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>A record of the agreement of the decisions made.</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Cardio-pulmonary resuscitation (CPR) decision",
+        "data": {
+          "description": "Whether a decision has been made, the decision, who made the decision, the date of decision, date for review and location of documentation.Where the person or their family member/carer have not been informed of the clinical decision please state the reason why.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>A record of the decision made and the location of the documentation. May include the following&#xA0; SNOMED CT concepts from the National Information Standard (SCCI1580):</span><span>&#xA0;</span><span>450475007 | For attempted cardiopulmonary resuscitation</span><span>450476008 | Not for attempted cardiopulmonary resuscitation</span><span>&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Planned review date",
+        "data": {
+          "description": "Date the plan is due for review.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>End of life care plan use case only. The date the plan is due for review.</span><span>&#xA0;</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "End of life",
+    "data": {
+      "description": "Information on the circumstances of the patient's death.",
+      "mro": "required",
+      "cardinality": "0 to 1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Certification of death",
+        "data": {
+          "description": "If person is in their last weeks of life, is there a doctor who has seen the person recently who could potentially sign a death certificate? Provide contact details.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>End of life care plan use case only. Free text of the name and contact details of the doctor.</span><span>&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Actions taken in anticipation of death",
+        "data": {
+          "description": "Plan that has been agreed to facilitate certification of death and/or funeral arrangements e.g. anticipatory discussions with coroner to arrange funeral within 24 hours etc.",
+          "mro": "required",
+          "cardinality": "0 to many",
+          "values": "<span>End of life care plan use case only. Free text.&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Actual place of death",
+        "data": {
+          "description": "The location where the person actually died as recorded on the death certificate.  If the person died somewhere other than their preferred place, record the reasons why this happened.",
+          "mro": "required",
+          "cardinality": "0 to 10 to many reason for variance",
+          "values": "<span>End of life care plan use case only. Include coded values from the National Information Standard (SCCI1580), together with the associated text. Free text details of the variance.</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Cause of death",
+        "data": {
+          "description": "The cause of death as recorded on the death certificate.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>End of life care plan use case only. Exactly as recorded on the death certificate.&#xA0;</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Date of death",
+        "data": {
+          "description": "The date on which a person died or is officially deemed to have died, as recorded on the death certificate.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>End of life care plan use case only. Exactly as recorded on the death certificate.</span>&#xA0;"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Person completing record",
+    "data": {
+      "description": "The details of the person who filled out the record.",
+      "mro": "mandatory",
+      "cardinality": "1 only",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Name",
+        "data": {
+          "description": "The name of the person completing the record, preferably in a structured format.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The person name as held on the source system. Where possible this should be broken down into its constituent parts (prefix, given name, family name, and suffix). An identifier for the person completing the record will be sent (but may not be displayed in the rendered message).</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Professional identifier",
+        "data": {
+          "description": "Professional identifier for the person completing the record e.g., GMC number, HCPC number etc or the personal identifier used by the local organisation.",
+          "mro": "required",
+          "cardinality": "0 to 1",
+          "values": "<span>The type of professional identifier (e.g. GMC, HCPC, local) and the identifier. This will be presented as text. This may not be displayed in the record. &#xA0;</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Organisation",
+        "data": {
+          "description": "The organisation the person completing the record works for.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>An ODS identifier for the organisation or site, the name of the organisation or site, and a postal address (if available).</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Role",
+        "data": {
+          "description": "The role the person is playing within the organisation at the time record was updated.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The role may be held on the source system, be from an authoritative source such as SDS, or use an existing vocabulary such as the job role title (from the national workforce dataset).</span>&#xA0;"
+        },
+        "children": []
+      },
+      {
+        "title": "Contact details",
+        "data": {
+          "description": "Contact details of the person completing the record. For example a phone number, email address. Contact details are used to resolve queries about the record entry.",
+          "mro": "optional",
+          "cardinality": "0 to many",
+          "values": "<span>The contact details may be for the individual completing the record, or wider team details (for example a phone number for a hospital department).</span>"
+        },
+        "children": []
+      },
+      {
+        "title": "Date and time completed",
+        "data": {
+          "description": "The date and time the record was updated.",
+          "mro": "mandatory",
+          "cardinality": "1 only",
+          "values": "<span>The date/time the record was updated. This will probably be a system, date taken from electronic device used to update the patient record.</span>\n      <span>&#xA0;&#xA0;</span>"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  }
+]
