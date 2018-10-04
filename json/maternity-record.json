@@ -1,0 +1,4204 @@
+[
+  {
+    "title": "Patient demographics ",
+    "data": {
+      "description": "This heading holds all of the elements for each instance of a patient demographics entry.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Patient name",
+        "data": {
+          "description": "The full name of the woman. This will normally be given by a Patient Demographics Service (PDS) woman trace, or the name of the woman held on the local Patient Administration System (PAS).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient preferred name",
+        "data": {
+          "description": "The name by which a woman wishes to be addressed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Date of birth",
+        "data": {
+          "description": "The date of birth of the woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Place of birth",
+        "data": {
+          "description": "The town and country of birth of the woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient sex",
+        "data": {
+          "description": "The woman’s phenotypic sex. Determines how the woman will be treated clinically.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Gender",
+        "data": {
+          "description": "As the woman wishes to portray themselves.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "NHS number",
+        "data": {
+          "description": "The unique identifier for a woman within the NHS in England and Wales.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Other identifier",
+        "data": {
+          "description": "Country specific or local identifier, e.g. Community Health Index (CHI) in Scotland.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient address",
+        "data": {
+          "description": "The woman's usual place of residence.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient telephone number",
+        "data": {
+          "description": "Telephone contact details of the woman. To include, e.g. mobile, work and home number if available.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient email address",
+        "data": {
+          "description": "Email address of the woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Communication preferences",
+        "data": {
+          "description": "Preferred contact method, e.g. sign language, letter, phone, etc. Also preferred written communication format, e.g. large print, braille.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Ethnicity ",
+        "data": {
+          "description": "The ethnicity of the woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Religion  ",
+        "data": {
+          "description": "The religious affiliation as specified by the woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Marital status",
+        "data": {
+          "description": "An indicator to identify the legal marital status of the woman",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Date of death",
+        "data": {
+          "description": "The date of death of the woman (if applicable)",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Time of death",
+        "data": {
+          "description": "The time of death of the woman\r\n\n\n\n\n\n\n\n(if applicable)",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Demographic history",
+    "data": {
+      "description": "This heading holds all of the elements for each instance of a patient demographics history as provided by the PDS previous demographic history flag.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Patient name  ",
+        "data": {
+          "description": "Any previous names, aliases and preferred name. This will normally be given by a Patient Demographics Service (PDS) patient trace, or the name of the woman held on the local Patient Administration System (PAS).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Date of birth",
+        "data": {
+          "description": "History of date of birth changes.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Gender ",
+        "data": {
+          "description": "History of gender change.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient address",
+        "data": {
+          "description": "History of woman's usual place of residence.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Patient telephone number",
+        "data": {
+          "description": "History of telephone contact details of the woman. To include, mobile, work and home number if available.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Legal information",
+    "data": {
+      "description": "The legal information relating to the woman.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Consent for information sharing",
+        "data": {
+          "description": "This is a record of consent for information sharing under the common law duty of confidentiality. Where consent has not been obtained or sought, the reason why should be provided. Include best interests decision where person lacks capacity.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Consent relating to child",
+        "data": {
+          "description": "Consideration of age and competency. Record of person with parental responsibility or appointed guardian where woman lacks competency.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Mental capacity assessment",
+        "data": {
+          "description": "Whether an assessment of the mental capacity of the woman has been undertaken, if so, what capacity the decision relates to, who carried it out, when and the outcome of the assessment. Also record best interests decision if woman lacks capacity.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Deprivation of Liberty Safeguards or equivalent",
+        "data": {
+          "description": "Record of Deprivation of Liberty Safeguards (DoLS) or equivalent, including the reason for this.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Mental Health Act or equivalent status",
+        "data": {
+          "description": "Record where a woman diagnosed with a mental disorder is formally detained under the Mental Health Act or equivalent, including the section number and start date, start time and end date. If person subject to community treatment order or conditional discharge (or equivalent) record here.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Advance decision to refuse treatment (ADRT)",
+        "data": {
+          "description": "A record of an advance decision to refuse one or more specific types of future treatment, made by a woman who had capacity at the time of recording the decision. The decision only applies when the woman no longer has the capacity to consent to or refuse the specific treatment being considered. An ADRT must be in writing, signed and witnessed. If the ADRT is refusing life-sustaining treatment it must state specifically that the treatment is refused even if the woman’s life is at risk.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Lasting power of attorney for personal welfare  or court-appointed deputy (or equivalent)",
+        "data": {
+          "description": "Record of one or more people who have been given power (LPA) by the woman when they had capacity to make decisions about their health and welfare should they lose capacity to make those decisions. To be valid, an LPA must have been registered with the Court of Protection. If life-sustaining treatment is being considered the LPA document must state specifically that the attorney has been given power to consent to or refuse life-sustaining treatment. Details of any person (deputy) appointed by the court to make decisions about the woman’s health and welfare. A deputy does not have the power to refuse life-sustaining treatment.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Looked after child",
+        "data": {
+          "description": "Legal Information for Looked after child.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Local authority",
+            "data": {
+              "description": "The named local authority for the looked after Child.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Looked after child start date",
+            "data": {
+              "description": "Start date of a 'looked after child’.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "End date of a looked after child'",
+            "data": {
+              "description": "End date of a ‘looked after child’.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      },
+      {
+        "title": "Child protection plan",
+        "data": {
+          "description": "Legal information for Child protection plan.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Local authority",
+            "data": {
+              "description": "The named local authority for the child protection plan.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Child protection plan start date",
+            "data": {
+              "description": "Start date of a child protection plan",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Child protection plan end date",
+            "data": {
+              "description": "End date of a child protection plan",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      },
+      {
+        "title": "Unborn child protection plan",
+        "data": {
+          "description": "Legal Information for the Unborn Child Protection Plan.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Local authority",
+            "data": {
+              "description": "The named local authority for the unborn child protection plan.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Unborn child protection plan start date",
+            "data": {
+              "description": "Start date of a child protection plan.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Unborn child protection plan end date",
+            "data": {
+              "description": "End date of a child protection plan.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Individual requirement ",
+    "data": {
+      "description": "The Individual requirements that a woman has, e.g. communication, cultural, cognitive or mobility needs.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Accessible information- communication support",
+        "data": {
+          "description": "Outlines capability and support required in order to in order to provide accessibility, with regard to disability.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Accessible information - requires communication professional ",
+        "data": {
+          "description": "Requirement for a communication professional to be present in order to provide accessibility, with regard to disability.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Accessible information- requires specific contact method",
+        "data": {
+          "description": "Requirement for a specific contact method in order to provide accessibility, with regard to disability.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Accessible information- requires specific information format",
+        "data": {
+          "description": "Requires information in a specific format in order to provide accessibility, with regard to disability.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Individual requirements",
+        "data": {
+          "description": "Individual requirements that a woman has. These may be communication, cultural, cognitive or mobility needs related to themselves or their primary carer.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Mobility needs",
+        "data": {
+          "description": "A woman's personal physical movement between two spaces that achieves participation and a degree of independence.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Cognition",
+        "data": {
+          "description": "An indicator of cognitive impairment to be considered when communicating\n    .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Supporting text may be given regarding the individual requirement.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "GP practice ",
+    "data": {
+      "description": "The details of the GP practice where the woman is registered.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "GP name",
+        "data": {
+          "description": "Where the woman or woman's representative offers the name of a GP as their usual GP.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "GP practice details",
+        "data": {
+          "description": "Name and address of the woman's registered GP practice.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "GP practice identifier",
+        "data": {
+          "description": "The identifier of the registered GP practice.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "GP opt out indicator",
+        "data": {
+          "description": "Indication that the woman has opted out of registering with a GP",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Professional contacts",
+    "data": {
+      "description": "The details of the woman’s professional contacts.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Name/team",
+        "data": {
+          "description": "The name of the person or the team responsible.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Role",
+        "data": {
+          "description": "The professional role the individual has in relation to the woman, e.g. nursery nurse, health visitor, school nurse etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Speciality",
+        "data": {
+          "description": "The speciality of the professional responsible, e.g. health visiting, school nursing etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Team",
+        "data": {
+          "description": "The name of the team, if the name of the person has been entered.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Organisation",
+        "data": {
+          "description": "The name of the organisation responsible.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Contact details",
+        "data": {
+          "description": "Contact details of the person, e.g. telephone number, email address etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Start date",
+        "data": {
+          "description": "The start date of the relationship with the health professional.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "End date",
+        "data": {
+          "description": "The end date of the relationship with the health professional.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Relevant past medical, surgical and mental health history ",
+    "data": {
+      "description": "The record of the woman’s significant medical, surgical and mental health history. Including relevant previous diagnoses,\r\n\n\n\n\nproblems and issues, procedures, investigations, specific anaesthesia issues, etc (will obstetric history).",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the medical history was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The location where the medical history was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "Details of the professional performing the medical history (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Gynaecology",
+        "data": {
+          "description": "A record of the woman’s gynaecology medical history relevant to the maternity episode, including relevant previous diagnoses, problems and issues, procedures, surgeries and investigations.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Past obstetric",
+        "data": {
+          "description": "A record of the woman’s obstetric medical history relevant to the maternity episode. To include each previous pregnancy details and the outcome.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Relevant past medical history",
+        "data": {
+          "description": "The record of the patient’s significant medical,\r\n\n\n\n\nhistory. Including relevant previous diagnoses, health history problems and issues.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Relevant past surgical history",
+        "data": {
+          "description": "The record of the patient’s significant surgical history. Including relevant issues, procedures, investigations, specific anaesthesia issues, etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Relevant past mental health history",
+        "data": {
+          "description": "A record of the woman’s mental health history relevant to the maternity episode.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Acute hospital episodes",
+        "data": {
+          "description": "Details of any history of acute hospital episodes including ITU, HDU and A&E attendances the woman may have had.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Mental health admissions",
+        "data": {
+          "description": "Reported details of any history of mental health admissions.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Examination findings",
+    "data": {
+      "description": "The details of the examination findings.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the examination was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The location where the examination was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "The details of the professional performing the examination (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "General appearance",
+        "data": {
+          "description": "The record of a clinician’s ‘first impression’ assessment including\r\n\n\ngeneral clinical examination finding, e.g. clubbing, anaemia, jaundice, obese/malnourished/cachectic, height, weight, etc",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Observations",
+        "data": {
+          "description": "The record of essential physiological measurements, e.g. heart rate, blood pressure, temperature, pulse, respiratory rate, oxygen saturation. Use of National Early Warning Score (NEWS) chart where appropriate.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Examination findings",
+        "data": {
+          "description": "The record of findings from the examinations performed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Mental health examination",
+        "data": {
+          "description": "The record of findings from mental health examinations and, where appropriate, the type of the examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Head and neck examination",
+        "data": {
+          "description": "The record of findings from the head and neck examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Oral examination",
+        "data": {
+          "description": "The record of findings from the oral examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Cardiovascular examination",
+        "data": {
+          "description": "The record of findings from the cardiovascular system examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Respiratory examination",
+        "data": {
+          "description": "The record of findings from the respiratory system examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Obstetric and gynaecology examination (including abdominal and uterine palpation)",
+        "data": {
+          "description": "The record of findings from the obstetric examination e.g. abdominal uterine palpation, striations or Linea Nigra and whether she has previous operative scars, such as previous caesarean section. To include the record of findings from the vaginal examination, including FGM, presentation, moulding, membranes, observation of liquor and general cervical observations and contractions (including the strength, length and frequency), uterus size etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Neurological system examination",
+        "data": {
+          "description": "The record of findings from the neurological system examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Musculoskeletal examination",
+        "data": {
+          "description": "The record of findings from the musculoskeletal examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Dermatology examination",
+        "data": {
+          "description": "The record of findings from the examination of the skin.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Renal system examination",
+        "data": {
+          "description": "The record of findings from the renal system examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Endocrine system examination",
+        "data": {
+          "description": "The record of findings from the endocrine system examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Gastrointestinal system examination",
+        "data": {
+          "description": "The record of findings from the gastrointestinal system examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comments ",
+        "data": {
+          "description": "Any supporting text may be given regarding the examination.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Fetal examinations",
+        "data": {
+          "description": "Fetal Examination details per fetus.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Fetal movements",
+            "data": {
+              "description": "To be completed for each fetus and includes the examination of fetal movements, fetal heart rate, summary of CTG baseline (bpm) and decelerations.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Presenting part",
+            "data": {
+              "description": "The presenting part of the fetus.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Lie",
+            "data": {
+              "description": "The lie of the fetus.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Investigation results",
+    "data": {
+      "description": "The details of the investigation results.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date the investigation was performed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "The details of the professional performing the investigation (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location ",
+        "data": {
+          "description": "The location where the investigation was recorded .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Investigation",
+        "data": {
+          "description": "The investigation performed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Investigation result",
+        "data": {
+          "description": "For each investigation, the result of the investigation (this includes the result value, with unit of observation and reference interval where applicable, interpretation of the results and date.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Procedures ",
+    "data": {
+      "description": "The details of any procedures performed.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the procedure was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location ",
+        "data": {
+          "description": "The location where the procedure was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "The details of the professional performing the procedure (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Procedure",
+        "data": {
+          "description": "The details of the therapeutic or diagnostic procedure performed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Anatomical site",
+        "data": {
+          "description": "The body site of the procedure.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Laterality",
+        "data": {
+          "description": "The laterality of the procedure.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Complications related to procedure",
+        "data": {
+          "description": "Any details of any intra-operative complications encountered during the procedure, arising during the woman’s stay in the recovery unit or directly attributable to the procedure.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Specific anaesthesia issues",
+        "data": {
+          "description": "The details of any adverse reaction to any anaesthetic agents including local anaesthesia.\r\n\n\n\n\nProblematic intubation, transfusion reaction, etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Supporting text may be given regarding the procedure.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Scan details",
+    "data": {
+      "description": "The details of any scan performed.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date the scan was performed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "The details of the professional performing the scan including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The location where the scan was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Scan",
+        "data": {
+          "description": "The scan performed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Scan finding",
+        "data": {
+          "description": "For each pregnancy scan, the finding of the scan (this includes the result value, with unit of observation and reference interval where applicable.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Supporting text may be given regarding the scan.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Attendance details",
+    "data": {
+      "description": "The \n    details of the woman’s contact with services.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date of the contact.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "The details of the professional performing the contact.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "Details of where the contact was performed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location type",
+        "data": {
+          "description": "An indication of the type of location where the contact took place, e.g. woman's home.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Contact type",
+        "data": {
+          "description": "The type of care contact\n    .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Consultation method",
+        "data": {
+          "description": "The consultation method used identifies the communication mechanism used to relay information between the care professional and the woman who is the subject of the consultation, during the contact.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Specialty",
+        "data": {
+          "description": "The specialties designated by royal colleges and faculties, e.g. orthopaedics, renal medicine, endocrinology, etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Service",
+        "data": {
+          "description": "The treatment functions or services, e.g. hand surgery, back surgery, hand clinic, TIA clinic, falls clinic, speech and language therapy, dialysis, family therapy, pre-admission assessment clinic, etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Care professionals present",
+        "data": {
+          "description": "The name, designation of the additional individual's or team members including consultant(s), nurse consultant(s), allied health professional(s), social worker(s)",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Person accompanying woman",
+        "data": {
+          "description": "Identify, where clinically relevant, others accompanying the woman, e.g. relative, friend, informal carer, advocate. If the woman was not present, was an authorised representative present? Includes: name, relationship, role (woman's advocate)",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Outcome of contact",
+        "data": {
+          "description": "This records the outcome of a contact.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Screening review",
+    "data": {
+      "description": "The details of the woman’s screening review.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "National screening programme",
+        "data": {
+          "description": "The name of the overarching screening programme, e.g. NHS Fetal Anomaly Screening Programme, NHS Infectious Diseases in Pregnancy Screening Programme, NHS Sickle Cell and Thalassaemia Screening Programme, National Diabetic Eye Screening Programme.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Screening test outcome",
+        "data": {
+          "description": "The overall outcome of the screening test (this may include the status, e.g. declined, deferred etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Specific test performed",
+        "data": {
+          "description": "The specific screening test performed, e.g. combined test, quadruple test, HIV, Syphilis etc.This may include site and laterality where applicable.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comments",
+        "data": {
+          "description": "Supporting text may be given covering regarding the screening test, outcome and actions taken.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "National antenatal screening programme",
+        "data": {
+          "description": "The details of the national antenatal screening programmes.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "NHS Fetal Anomaly Screening Programme - Down’s, Edwards’ and Patau’s Syndromes.",
+            "data": {
+              "description": "The details captured as part of the NHS Fetal Anomaly Screening Programme which screens for Down’s, Edwards’ and Patau’s syndromes",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "NHS Fetal Anomaly Screening Programme - Structural Anomalies",
+            "data": {
+              "description": "The details captured as part of the NHS Fetal Anomaly Screening Programme which screens for fetal anomalies.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "NHS Infectious Diseases in Pregnancy Screening Programme",
+            "data": {
+              "description": "The details captured as part of the NHS Infectious Diseases in Pregnancy Screening Programme which screens for Hepatitis B, HIV and Syphilis via a blood test. Chlamydia for under 25s and Hepatitis C can be recorded here as required.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "NHS Sickle Cell and Thalassaemia Screening Programme",
+            "data": {
+              "description": "The details captured as part of the NHS Sickle Cell and Thalassaemia Screening Programme which screens to find out if the woman is a carrier of the sickle cell or thalassaemia gene and therefore likely to pass it on to the baby. This may also be applicable to the baby's father if the woman is identified as a carrier of a haemoglobin disease.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "NHS Diabetic Eye Screening Programme",
+            "data": {
+              "description": "The details captured as part of the NHS Diabetic Eye Screening Programme which is offered to women with diabetes in pregnancy.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Referral details",
+    "data": {
+      "description": "The details of the individual or team who referred the woman.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date/time the referral was made.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Referrer details",
+        "data": {
+          "description": "The name, role, organisation and contact details of referrer. If not an person, this could be e.g. GP surgery, department, specialty, sub-specialty, educational institution, mental health etc. Also needs to include the source of the referral i.e. self-referral.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Referral method",
+        "data": {
+          "description": "The form in which a referral is sent and received.\r\n\n\nThis may be a letter, email, transcript of a telephone conversation, choose and book, in woman (self-referral), unknown etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Referral to",
+        "data": {
+          "description": "The type of service or team that the woman has been referred into, e.g. GP surgery, department, specialty, subspecialty, educational establishment, mental health etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Referred from",
+        "data": {
+          "description": "The type of service or team that the woman has been referred from.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Urgency of referral",
+        "data": {
+          "description": "Referrer’s assessment of urgency, e.g. urgent/ soon/ routine.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Reason for referral",
+        "data": {
+          "description": "The primary presenting condition or symptom for which the woman was referred to a specialist service.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Admission details",
+    "data": {
+      "description": "The details of the woman’s admission.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date & time of admission",
+        "data": {
+          "description": "The date/time woman admitted to hospital.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Admitted to",
+        "data": {
+          "description": "The ODS site code and description of where the woman was admitted.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Responsible clinician",
+        "data": {
+          "description": "The name and designation of the clinician, who has overall responsibility for the woman (may not actually see the woman)’.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Speciality",
+        "data": {
+          "description": "Specialties designated by royal colleges and faculties, e.g. orthopaedics, renal medicine, endocrinology, etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Source of admission",
+        "data": {
+          "description": "Where the woman was immediately prior to admission, e.g. usual place of residence, temporary place of residence, penal establishment.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Person accompanying women",
+        "data": {
+          "description": "The identity of others accompanying the woman, e.g. relative, friend, woman informal carer, advocate.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Reason for admission",
+        "data": {
+          "description": "The specific reason that prompted the decision to admit to hospital, e.g. chest pain, blackout, fall, myocardial infarction, a specific procedure, investigation or treatment.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Admission method",
+        "data": {
+          "description": "How the woman was admitted to hospital. For example: elective, emergency, maternity, transfer etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Discharge details",
+    "data": {
+      "description": "The details of the woman’s discharge.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date and time of discharge",
+        "data": {
+          "description": "The actual date and time of discharge.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Discharged from",
+        "data": {
+          "description": "The ODS site code and description of where the discharge was from.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Discharging clinician",
+        "data": {
+          "description": "The clinician responsible for the woman at time of discharge.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Discharging specialty/department",
+        "data": {
+          "description": "The specialty/department responsible for the woman at the time of discharge.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Discharge method",
+        "data": {
+          "description": "The method of discharge from hospital. National codes, e.g. woman discharged on clinical advice or with clinical consent; woman discharged him/herself or was discharged by a relative or advocate; woman died; stillbirth.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Discharge  destination",
+        "data": {
+          "description": "The destination of the woman on discharge from hospital.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Discharge address",
+        "data": {
+          "description": "The address to which woman is discharged. Only completed where this is not the usual place of residence.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Allergies and adverse reactions",
+    "data": {
+      "description": "The details of any known allergies, intolerances or adverse reactions.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date recorded",
+        "data": {
+          "description": "The date that the reaction was clinically recorded/asserted. This will often equate to the date of onset of the reaction but this may not be wholly clear from source data.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Causative agent",
+        "data": {
+          "description": "The agent such as food, drug or substances that has caused or may cause an allergy, intolerance or adverse reaction in this woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Date first experienced",
+        "data": {
+          "description": "When the reaction was first experienced. May be a date of partial date, e.g. year or text, e.g. during childhood.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Description of reaction",
+        "data": {
+          "description": "A description of the manifestation of the allergic or adverse reaction experienced by the woman. For example, skin rash.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Severity",
+        "data": {
+          "description": "A description of the severity of the reaction.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Certainty",
+        "data": {
+          "description": "A description of the certainty that the stated causative agent caused the allergic or adverse reaction.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Type of reaction",
+        "data": {
+          "description": "The type of reaction experienced by the woman (allergic, adverse, intolerance).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Evidence",
+        "data": {
+          "description": "The results of investigations that confirmed the certainty of the diagnosis. Examples might include results of skin prick allergy tests.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Any additional comment or clarification about the allergy or adverse reaction.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Family history",
+    "data": {
+      "description": "Information on illness in family relations relevant to the health or care of the woman.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Family history of woman",
+        "data": {
+          "description": "The details of the family history of the woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Date",
+            "data": {
+              "description": "The date the family history was recorded.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Location ",
+            "data": {
+              "description": "The location where the family history was recorded.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Condition or diagnosis",
+            "data": {
+              "description": "The condition or diagnosis in family relations deemed to be significant to the care or health of the woman.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Relationship to woman",
+            "data": {
+              "description": "The relationship of the person with the condition to the woman.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Maternal or paternal relation",
+            "data": {
+              "description": "The record of whether the condition or diagnosis was on the mother’s or father’s side of the family, where needed, e.g. paternal grandfather.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Comment",
+            "data": {
+              "description": "Any further textual comment.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      },
+      {
+        "title": "Family history of fetus",
+        "data": {
+          "description": "The details of the family history of the fetus.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Date",
+            "data": {
+              "description": "The date the family history was recorded.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Location ",
+            "data": {
+              "description": "The location where the family history was recorded.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Condition or diagnosis",
+            "data": {
+              "description": "The condition or diagnosis in family relations of the fetus deemed to be significant to the care or health of the fetus during pregnancy.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Relationship to fetus",
+            "data": {
+              "description": "The relationship of the person with the condition to the fetus.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Maternal or paternal relation",
+            "data": {
+              "description": "The record of whether the condition or diagnosis was on the mother’s or father’s side of the family, where needed, e.g. paternal grandfather.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Comment",
+            "data": {
+              "description": "Any further textual comment.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Immunisations",
+    "data": {
+      "description": "The details of a women’s immunisations.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "The details of the professional performing the immunisation (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The details of where the immunisation was performed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the Immunisation was administered.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Name of immunisation",
+        "data": {
+          "description": "Which immunisation has been administered (SNOMED CT code – list of available immunisations).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Vaccine product",
+        "data": {
+          "description": "Vaccine product administered.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Manufacturer",
+        "data": {
+          "description": "The vaccine manufacturer.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Batch number ",
+        "data": {
+          "description": "The batch number of the vaccine.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Site",
+        "data": {
+          "description": "The body site vaccine was administered into.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Route ",
+        "data": {
+          "description": "How vaccine entered the body.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Dose amount",
+        "data": {
+          "description": "Amount of vaccine administered.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Dose sequence ",
+        "data": {
+          "description": "Nominal position in a series of vaccines.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Outcome status ",
+        "data": {
+          "description": "Whether the vaccine was administered or not, including the reason why.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Reported",
+        "data": {
+          "description": "A flag to indicate the information was reported to a healthcare professional.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Indication",
+        "data": {
+          "description": "The clinical indication or reason for administering the immunisation where relevant\n    .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Medications and medical devices ",
+    "data": {
+      "description": "The details of and instructions for medications and medical equipment the woman is using or has been using but discontinued.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Medication item cluster",
+        "data": {
+          "description": "",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Performing professional",
+            "data": {
+              "description": "Details of the professional recording the Medication (including name and role).",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Location",
+            "data": {
+              "description": "Details of where the medication was recorded.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Date",
+            "data": {
+              "description": "The date on which the medication was recorded.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Medication name",
+            "data": {
+              "description": "May be generic name or brand name (as appropriate).Mandatory medication name coded using a SNOMED CT/dm+d term where possible, allowing plain text for historical/patient reported items , extemporaneous preparations or those not registered in dm+d, \r\n\n\n\r\n\n\n\n      e.g.“Citalopram tab 20mg”, \"Trimethoprim\"",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Form",
+            "data": {
+              "description": "Form of the medicinal substance, e.g capsules, tablets, liquid. Not normally required unless a specific form has been requested by the prescriber. \r\n\n\n\n      E.g, “modified release \n    \n    \n      capsules\"",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Route",
+            "data": {
+              "description": "Medication administration description (oral, IM, IV, etc.): may include method of administration, (e.g., by infusion, via nebuliser, via NG tube).Optional medication route, using SNOMED CT terms where possible. Not generally applicable to product-based medication. Should not be used to specify a specific administration site, for which a separate archetype is used, e.g. the route is 'intraocular' the site may be ‘left eye’. \r\n\n\n   \n      E.g. “oral\", “intraocular\". Note that this element supports\n    \n    \n      multiple routes to allow a choice to be specified by the prescriber.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Site",
+            "data": {
+              "description": "The anatomical site at which the medication is to be administered. E\r\n\n\n \n      .g. “left eye\"",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Method",
+            "data": {
+              "description": "The technique or method by which the medication is to be administered.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose directions description",
+            "data": {
+              "description": "A single plain text phrase describing the entire medication dosage and administration directions, including dose quantity and medication frequency.  \r\n\n\n\r\n\n\n\n      E.g. “I tablet at night” or “20mg at 10pm” This is the form of dosage direction text normally available from UK GP systems.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose amount description ",
+            "data": {
+              "description": "A plain text description of medication single dose amount, as described in the AoMRC medication headings.  \r\n\n\n\r\n\n\n\n      E.g. \"30 mg\" or \"2 tabs\". UK secondary care clinicians and systems normally minimally structure their dose directions, separating dose amount and dose timing (often referred to as dose and frequency). This format is not normally used in GP systems, which will always import dose and frequency descriptions concatenated into the single dose directions description.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose timing description",
+            "data": {
+              "description": "A plain text description of medication dose frequency, as described in the AoMRC medication headings,  \r\n\n\n\n      e.g. “twice a day\", \"At 8am 2pm and 10pm\". UK secondary care clinicians and systems normally minimally structure their dose directions, separating dose amount and dose timing (often referred to as dose and frequency). This format is not normally used in GP systems, which will always import dose and frequency \n    \n    \n      descriptions concatenated into the single dose directions description.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Parsable dose directions",
+            "data": {
+              "description": "A parsable 'dose syntax' which carries dose strength, dose timing, dose duration and maximum dose information.  \r\n\n\n \n      Comment: e.g. \"20-30mg ^4/6h prn [180mg /24h]\" = 20 to 30 mgs, up to 4-6 hourly as required. Maximum 180mg in 24 hours. The 'as required reason' e.g. 'for pain' should be carried in the additional instruction element. Note that this is generally a symptom and is not the same as the indication which will usually describe a diagnosis or condition. Where supported, this would generally be used to exchange dosage information between systems, while structured dose directions are likely to be used only \n    \n    \n      \r\n\n\n.\r\n\n\n\n      within openEHR-based systems",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose direction cluster",
+            "data": {
+              "description": "A structural representation of the elements carried by the dose syntax in ‘parsable dose’.Strength / timing' i.e. dose strength, dose timing, dose duration and maximum dose.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose amount cluster",
+            "data": {
+              "description": "A structural representation of dose amount, e\r\n\n\n  \r\n\n\n\n      .g. 20mg or 2 tablets This element will generally only be used when persisting data within systems with ‘parsable dose directions' being used to exchange the same information between systems.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Structured dose timing cluster",
+            "data": {
+              "description": "A slot containing a structural, computable representation of dose timing and maximum dose.\r\n\n\n\r\n\n\n\n      This element will generally only be used when persisting data within systems with 'Parsable dose directions' being used to exchange the same information between systems.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Dose direction duration",
+            "data": {
+              "description": "Recommendation of the time period for which the medication should be continued, including direction not to discontinue.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Additional instruction ",
+            "data": {
+              "description": "Additional multiple dosage or administration instructions as plain text. This may include guidance to the prescriber, patient or person administering the medication. In some settings, specific administration instructions may be re-labelled as “patient advice' or ‘dispensing instruction' to capture these flavours of instruction, e\r\n\n\n\n      .g. “omit \n    \n    \n      morning dose on day of procedure”, \"for pain or fever\", “dispense weekly\".",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Course details cluster",
+            "data": {
+              "description": "Details of the overall course of medication.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": [
+              {
+                "title": "Course status",
+                "data": {
+                  "description": "The status of this prescription in an ambulatory (outpatient/GP/community) context\n    .",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Start date/time",
+                "data": {
+                  "description": "The date and/or time that the medication course should begin.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "End date/time",
+                "data": {
+                  "description": "The date and/or time that the medication course should finish.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Indication",
+                "data": {
+                  "description": "Reason for medication being prescribed, where known.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Link to indication record",
+                "data": {
+                  "description": "A link to the record which contains the indication for this medication order.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Comment/recommendation",
+                "data": {
+                  "description": "Suggestions about duration and/or review, ongoing monitoring requirements, advice on starting, discontinuing or changing medication.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              }
+            ],
+            "folder": true
+          },
+          {
+            "title": "Medication change summary cluster",
+            "data": {
+              "description": "Records the changes made to medication since admission.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": [
+              {
+                "title": "Status",
+                "data": {
+                  "description": "The nature of any change made to the medication since admission.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Indication",
+                "data": {
+                  "description": "Reason for change in medication, eg sub-therapeutic dose, patient intolerant.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Date of latest change",
+                "data": {
+                  "description": "The date of the latest change - addition, or amendment\n    \n      .",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Description of amendment",
+                "data": {
+                  "description": "Where a change is made to the medication ie one drug stopped and another started or eg dose, frequency or route is changed.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Comment",
+                "data": {
+                  "description": "Any additional comment about the medication change.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Quantity supplied",
+                "data": {
+                  "description": "The quantity of the medication, e.g. tablets, inhalers, etc, provided to the woman on discharge.  This may be dispensed by the pharmacy or on the ward.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              },
+              {
+                "title": "Total dose daily quantity cluster",
+                "data": {
+                  "description": "The total daily dose of this medication. This is helpful for estimating optimal adherence to dosing guidance. It may be computed from product/dose strength and frequency or entered manually.",
+                  "mro": "-1",
+                  "cardinality": "-1",
+                  "values": "-1"
+                },
+                "children": []
+              }
+            ],
+            "folder": true
+          }
+        ],
+        "folder": true
+      },
+      {
+        "title": " Medical devices entry",
+        "data": {
+          "description": "",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Medical devices entry",
+            "data": {
+              "description": "Any therapeutic medical device of relevance that does not have representation in the NHS dictionary of medicines and medical devices (dm+d).",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      },
+      {
+        "title": "Medication discontinued entry",
+        "data": {
+          "description": "",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Name of discontinued medication",
+            "data": {
+              "description": "The name of the medication or medical device being discontinued.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Status",
+            "data": {
+              "description": "The nature of any change made to the medication since admission.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Indication",
+            "data": {
+              "description": "The clinical indication for any changes in medication status\n    \n      .",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Date of latest change",
+            "data": {
+              "description": "The date of the discontinuation\n    \n      .",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Description of amendment",
+            "data": {
+              "description": "A description of any amendment\n    \n      .",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Comment",
+            "data": {
+              "description": "Any additional comment about the medication change.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Personal contacts",
+    "data": {
+      "description": "Details of the women’s personal contacts",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Name",
+        "data": {
+          "description": "The name of the person.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Relationship",
+        "data": {
+          "description": "The personal relationship the person has to the\r\n\n\nwoman, e.g. father, grandmother, family friend etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Parental responsibility",
+        "data": {
+          "description": "Flag to indicate whether the personal contact has parental responsibility if the woman is underage.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Household member",
+        "data": {
+          "description": "Status identifying whether the personal contact is a member of the same household.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Contact details",
+        "data": {
+          "description": "Contact details of the person, e.g. telephone number, email address etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "NHS number",
+        "data": {
+          "description": "The NHS number of the personal contact.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Next of kin",
+        "data": {
+          "description": "The primary person to contact in the event of an emergency or other situation.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Social context",
+    "data": {
+      "description": "The social setting in which the woman lives, such as their household, occupational history, and lifestyle factors.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Family and household",
+        "data": {
+          "description": "Family and household details of social context.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Household(s) composition",
+            "data": {
+              "description": "The details of those living in the same household and their relationship with the woman. As recorded in personal contacts.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Other significant individuals",
+            "data": {
+              "description": "People deemed as key by family and or health care professional in the woman's life that do not live in the home (s).",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Household(s) environment",
+            "data": {
+              "description": "The factors in the household(s) which impact the woman’s health and wellbeing, to include smoking in the home, alcohol/substance use etc.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Accommodation status",
+            "data": {
+              "description": "An indication of the type of accommodation where the woman lives. This should be based on the main or permanent residence.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Partner's employment status",
+            "data": {
+              "description": "The employment status of the partner and their occupation.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Household social services support",
+            "data": {
+              "description": "Whether or not any household member had/has social services support\n    .",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Comment",
+            "data": {
+              "description": "Any further textual comment.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      },
+      {
+        "title": "Personal",
+        "data": {
+          "description": "The personal details of social context.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Social circumstances",
+            "data": {
+              "description": "The record of the woman's social background, network and personal circumstances, e.g. housing, religious, ethnic/spiritual needs and social concerns.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Lifestyle",
+            "data": {
+              "description": "The record of lifestyle choices made by the woman which are pertinent to his or her health and well-being, e.g. the record of the physical activity level, pets, hobbies, sexual habits etc.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Smoking",
+            "data": {
+              "description": "Record of smoking status of the woman. To include CO screening. Also include the date stopped smoking and any types of nicotine replacement used.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Alcohol intake",
+            "data": {
+              "description": "Record of alcohol consumption of the woman. This includes the number of drinking days per week and units of alcohol per day.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Drug/substance use",
+            "data": {
+              "description": "Current recorded drug/substance use by the woman. This includes the drug/substance status and the type of drug",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Employment status",
+            "data": {
+              "description": "The employment status of the woman and her occupation.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Educational status",
+            "data": {
+              "description": "The highest educational qualification attained by the woman.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Asylum status",
+            "data": {
+              "description": "The asylum status of the woman.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Number of years in education",
+            "data": {
+              "description": "The number of years that the woman has spent in education.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Social risk factors ",
+            "data": {
+              "description": "A record of social factors which should be taken into account when providing care and support for the woman and the child when born.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Comment",
+            "data": {
+              "description": "Any further textual comment.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Problems list",
+    "data": {
+      "description": "A summary of the problems that require investigation or treatment.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date recorded ",
+        "data": {
+          "description": "The date the problem was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "The details of the professional recording (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location ",
+        "data": {
+          "description": "The details of where the problem was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Problem",
+        "data": {
+          "description": "A condition which needs addressing and so is important for every health professional to know about when seeing the woman. Problems may include diagnoses, symptoms, disabilities and social or behavioural issues, and comprise the ‘problem list’ .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Date ",
+        "data": {
+          "description": "A date or estimated date that the problem began",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "End date",
+        "data": {
+          "description": "The date or estimated date the problem was resolved (will be blank for active)",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Stage of disease ",
+        "data": {
+          "description": "The stage of the disease where relevant.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Supporting text may be given covering the problem.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Information and advice given",
+    "data": {
+      "description": "A record of any information or advice given for the woman, carer or relevant third party.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the information and advice was given.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The details of where the information and advice was given.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "Details of the professional giving the information and advice (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Information and advice given",
+        "data": {
+          "description": "This includes what information (including health promotional messages) and to whom it was given.The oral or written information or advice given to the woman, carer, other authorised representative, care professional or other third party. May include advice about actions related to medicines or other ongoing care activities on an ‘information prescription’. State here if there are concerns about the extent to which the woman and/or carer understands the information provided about diagnosis, prognosis and treatment.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Safety alerts",
+    "data": {
+      "description": "Details of the concern, risk or issues in relation to safeguarding.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the safety alert was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The location where the safety alert was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "Details of the professional recording the safeguarding issue (including name and role)’.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Risks to self",
+        "data": {
+          "description": "Risks the woman poses to themselves, e.g. suicide, overdose, self-harm, self-neglect.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Risks to others",
+        "data": {
+          "description": "Details of where the woman is at risk from an identified person, e.g. family member.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Risk from others",
+        "data": {
+          "description": "Details of where an adult or woman is at risk from an identified woman e.g. family member etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Safeguarding",
+    "data": {
+      "description": "The safeguarding details of the woman.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date ",
+        "data": {
+          "description": "The date on which safeguarding details was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location ",
+        "data": {
+          "description": "The location where the safeguarding details where recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Clinician",
+        "data": {
+          "description": "Details of the clinician recording the safeguarding details (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Safeguarding",
+        "data": {
+          "description": "Details of the concern, risk or issues in relation to safeguarding.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Any further textual comment.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Clinical risk factors",
+    "data": {
+      "description": "Details of clinical risk factors to the woman, fetus or child after birth’.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the clinical risk factor was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The location where the clinical risk factor was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "Details of the professional recording the clinical risk factor (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Clinical risk factor",
+        "data": {
+          "description": "Factor shown to be associated with the development of a medical condition that poses a risk the woman, fetus, or the child after birth. For example gestational diabetes or hypertension.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Clinical risk assessment",
+        "data": {
+          "description": "Specific assessments undertaken in relation to the risk.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Risk mitigation",
+        "data": {
+          "description": "Action taken to reduce the clinical risk.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Plan and requested actions",
+    "data": {
+      "description": "The details of planned investigations, procedures and treatment for a woman’s identified conditions and priorities.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the plan and requested actions was recorded .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "Details of the professional recording the plan and requested actions (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Actions for healthcare professionals",
+        "data": {
+          "description": "Including planned investigations, procedures and treatment for a woman’s identified conditions and priorities. For each action the following should be identified: outcome expectations, including the woman’s expectations.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Actions for woman or their carer",
+        "data": {
+          "description": "For each action the following should be identified: outcome expectations, including the woman’s expectations.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Agreed with woman or legitimate woman representative",
+        "data": {
+          "description": "Indicates whether the woman or legitimate representative has agreed the entire plan or individual aspects of treatment, expected outcomes, risks and alternative treatments.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Assessment scales",
+    "data": {
+      "description": "Details of the woman’s assessment scales.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the assessment scale was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The location where the assessment scale was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "Details of the professional performing the assessment scale (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Assessment scale name",
+        "data": {
+          "description": "The name of the overarching assessment scale used, e.g. Bayley, Griffiths, ages & stages questionnaire etc.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Total score",
+        "data": {
+          "description": "The total global score from the assessment.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Subscale name",
+        "data": {
+          "description": "The name of the subscale used (where relevant).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Subscale score",
+        "data": {
+          "description": "The total subscale score from the assessment.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Comment",
+        "data": {
+          "description": "Supporting text may be given regarding the assessment scale as a whole or a subscale.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Pregnancy outcome delivery and birth ",
+    "data": {
+      "description": "Details of a pregnancy outcome and birth",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date ",
+        "data": {
+          "description": "The date on which the pregnancy outcome/delivery/birth details were recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The location where the pregnancy outcome/delivery/birth details were recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "Details of the professional recording the pregnancy outcome/delivery/birth details (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Pregnancy outcome",
+        "data": {
+          "description": "The pregnancy outcome of each fetus.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Birth details",
+        "data": {
+          "description": "Details for each instance of a delivery and birth.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": [
+          {
+            "title": "Labour onset method",
+            "data": {
+              "description": "Details of the method by which the process of labour began, or delivery by caesarean section occurred.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Date and time of established labour",
+            "data": {
+              "description": "The date/time when established labour is confirmed - regular painful contractions and progressive cervical dilatation.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Date and time fully dilated",
+            "data": {
+              "description": "The date and time that the woman is deemed to be fully dilated.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Duration of 1st stage",
+            "data": {
+              "description": "A derived field based on the time of established labour to the time of full dilation.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Onset of 2nd stage of labour",
+            "data": {
+              "description": "The date and time that the second stage of labour was deemed to start.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Date and time pushing commenced",
+            "data": {
+              "description": "The date and time that pushing commenced.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Location of birth",
+            "data": {
+              "description": "The place of birth (including the address and organisation name where relevant).",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Delivery place type",
+            "data": {
+              "description": "The type of place in which the baby was born, e.g. private health facility, domestic address, NHS hospital, midwifery led unit etc.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Birth attendants",
+            "data": {
+              "description": "People present at the delivery.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Ruptured membranes date/time",
+            "data": {
+              "description": "Date/time on which membranes ruptured if spontaneous.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Duration of rupture of membranes",
+            "data": {
+              "description": "The duration in hours and minutes as derived using the date of rupture versus current date time.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Anaesthesia type",
+            "data": {
+              "description": "The specific type of anaesthesia used to carry out the procedure (if applicable).",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Pain relief ",
+            "data": {
+              "description": "A record of pain relief used during labour and delivery where not anaesthetic or medication.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Delivery decision date/time",
+            "data": {
+              "description": "The date and time of the decision to deliver.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Delivery decision made by",
+            "data": {
+              "description": "The details of the clinician making the decision to deliver.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Reason for delivery decision",
+            "data": {
+              "description": "The details of the reason for the decision to deliver.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Date and time of delivery",
+            "data": {
+              "description": "The date and time of the delivery of the baby.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Duration of second stage",
+            "data": {
+              "description": "Derived field from the onset of the second stage to the date and time of delivery.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Types of delivery (attempted)",
+            "data": {
+              "description": "The type(s) of delivery for the baby that was attempted, but was not the final delivery method.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Type of delivery ",
+            "data": {
+              "description": "Type of delivery for the baby, e.g. spontaneous vaginal, vacuum extraction, breech extraction, elective caesarean section etc.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Length of labour",
+            "data": {
+              "description": "The length of the stages of labour and duration of the rupture of membranes (derived field).",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Delayed cord clamping/duration",
+            "data": {
+              "description": "Record the duration of which cord clamping occurred.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Placenta delivery method",
+            "data": {
+              "description": "The method by which the placenta was removed through physiological, active or manual means.\r\n\n\n\n\n\n\n\nWhere more than one method is used, the final method should be recorded.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "End of third stage",
+            "data": {
+              "description": "The date and time of the end of the third stage of labour.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Third stage duration",
+            "data": {
+              "description": "The duration of the third stage of labour derived between the start of the third stage and the delivery of the placenta.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Examination of placenta",
+            "data": {
+              "description": "A visual examination of the placenta to check completeness.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Placenta disposal",
+            "data": {
+              "description": "The method by which the placenta was disposed.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Placenta sent for histology",
+            "data": {
+              "description": "An indication as to whether the placenta was sent for histology.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Umbilical cord number of vessels",
+            "data": {
+              "description": "The number of umbilical cord vessels.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Total blood loss",
+            "data": {
+              "description": "The total volume of blood loss in mls following delivery.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          },
+          {
+            "title": "Comments",
+            "data": {
+              "description": "Supporting text may be given covering regarding the outcome\r\n\n\n\n\n\n\n\nof the checks and actions taken.",
+              "mro": "-1",
+              "cardinality": "-1",
+              "values": "-1"
+            },
+            "children": []
+          }
+        ],
+        "folder": true
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Baby details (woman)",
+    "data": {
+      "description": "Birth details of the baby.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Name ",
+        "data": {
+          "description": "The given name as recorded by the midwife.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "NHS number ",
+        "data": {
+          "description": "The unique identifier for a woman within the NHS in England and Wales.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Baby identifier",
+        "data": {
+          "description": "Baby identifier details.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Birth order",
+        "data": {
+          "description": "The sequence in which this baby was born (one of one, one of two etc)\n    .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Gender",
+        "data": {
+          "description": "The person’s phenotypic sex. Determines how the person will be treated clinically.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Multiple birth ",
+        "data": {
+          "description": "Where the baby is one of a multiple birth, to include the total number of offspring and to include whether the baby is identical to one of the siblings.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Birth weight",
+        "data": {
+          "description": "Numeric value for weight at birth.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Gestation ",
+        "data": {
+          "description": "Gestational age in weeks and days (usually equivalent to length of pregnancy).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Birth outcome ",
+        "data": {
+          "description": "The birth outcome of each fetus",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "APGAR  ",
+        "data": {
+          "description": "The APGAR Score of the neonate at 1, 5 and 10 minutes and the component scores used to calculate the score.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Rhesus status ",
+        "data": {
+          "description": "An indication of whether the fetus has or does not have the rhesus factor (or Rh D antigen) on the surface of their red blood cells, using the Rh System.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Congenital abnormalities",
+        "data": {
+          "description": "(Yes no field) as per NHSDD and recorded on birth notification.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Investigations requested",
+        "data": {
+          "description": "To include any investigations requested including post mortem investigations)\n    .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Professional comment",
+    "data": {
+      "description": "A brief description of the encounter.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date on which the professional summary was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Location",
+        "data": {
+          "description": "The location where the professional summary was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Performing professional",
+        "data": {
+          "description": "Details of the professional performing the professional summary (including name and role).",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Professional summary ",
+        "data": {
+          "description": "Summary of the encounter. Where possible, very brief. This may include interpretation of findings and results, opinion and specific action(s). Planned actions will be recorded under ‘plan’.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Personal comment/plan",
+    "data": {
+      "description": "The comment recorded by the woman or her representative\n    .",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "Date the comment was entered and shared.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Person details",
+        "data": {
+          "description": "Who recorded the comment and what relationship they are to the woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Personal comment",
+        "data": {
+          "description": "Free text comment recorded by the woman or her representative.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Maternity personalised care plan",
+        "data": {
+          "description": "Personalised care plan details to include the data and plan details.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Woman's concerns, expectations and wishes",
+    "data": {
+      "description": "Details of the woman’s concerns, expectations and wishes\n    \n      .",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Date",
+        "data": {
+          "description": "The date the concerns, wishes or goals of the person was recorded.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Maternity care plan type",
+        "data": {
+          "description": "The stage of maternity to which the care plan applies, e.g. antenatal.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Planned delivery setting",
+        "data": {
+          "description": "The planned delivery setting where the pregnant woman plans to have her baby as designated by the care professional in consultation with the woman.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Reason for change of planned delivery setting",
+        "data": {
+          "description": "The reason why the planned delivery setting has changed.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Woman and carer concerns, expectations and wishes",
+        "data": {
+          "description": "Description of the concerns, wishes or goals of the woman in relation to their care, as expressed by the woman, their representative or carer. Where the woman lacks capacity this may include their representative's concerns, expectations or wishes.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Advance statement",
+        "data": {
+          "description": "Written requests and preferences made by a woman with capacity conveying their wishes, beliefs and values for their future care should they lose capacity. Include the location of the document if known.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Pregnancy episode details",
+    "data": {
+      "description": "The \n      \n    \n    details of the pregnancy episode status.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Pregnancy ID",
+        "data": {
+          "description": "The identifier used to tie together data relating to a specific pregnancy, allowing specific contacts and activities carried out, e.g. scans, tests, observations, findings and diagnoses to be linked back to the booking appointment for that pregnancy.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Fetal identifier",
+        "data": {
+          "description": "The Identifier which allows woman babies to be identified in the event of multiple births, and in turn allow specific conditions to be attributed to specific babies and linked to labour/antenatal test details .",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Maternity episode start date",
+        "data": {
+          "description": "The start date of the maternity episode.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Maternity episode end date",
+        "data": {
+          "description": "The end date of the maternity episode.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      },
+      {
+        "title": "Maternity episode end reason",
+        "data": {
+          "description": "The reason that the woman was discharged from maternity services.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  },
+  {
+    "title": "Participation in research",
+    "data": {
+      "description": "The details of participation in research.",
+      "mro": "-1",
+      "cardinality": "-1",
+      "values": "-1"
+    },
+    "children": [
+      {
+        "title": "Research study details",
+        "data": {
+          "description": "Name of the research study/trial and/or drug/intervention.",
+          "mro": "-1",
+          "cardinality": "-1",
+          "values": "-1"
+        },
+        "children": []
+      }
+    ],
+    "folder": true
+  }
+]
